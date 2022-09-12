@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.home-content h2{
+    color: white;
+    font-size: 40px;
+}
+.home-content p{
+    color: white;
+    font-size: 15px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+    font-size: large;
+    color: white;
+}
+h1{
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.home-section{
+    height: 600px;
+    width: 100%;
+    background-image: url(image/tm.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}  
+.home-section::before{
+    content:" ";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.7;
+    background-color:dodgerblue;
+}
+ .home-content{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.home-btn{
+    margin-top: 20px;
+    align-items: center;
+}
+.button1{
+    border: 1px solid white;
+    color: blue;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 3px;
+  }
+  .button2{
+    border: 1px solid white;
+    color:white;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 3px;
+  }
