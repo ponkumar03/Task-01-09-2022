@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.container{
+  width: 1250px;
+  margin: auto;
+}
 .navbar{
     position: relative;
 }
@@ -26,7 +30,7 @@ nav ul li{
     font-size: large;
     color: white;
 }
-h1{
+nav h1{
     color: white;
 }
 nav ul li a{
@@ -84,3 +88,167 @@ nav ul li a{
     background-color: transparent;
     border-radius: 3px;
   }
+  /* about */
+  .ab-navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .logo{
+    width: 90px;
+    padding-left: 70px;
+    padding-right: 80px;
+    cursor: pointer;
+  }
+  .picture{
+    width: 60%;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  .img1{
+    position: absolute;
+   width: 400px;
+   top: 200px;
+   left: 180px;
+   border: 10px solid white;
+   
+  }
+  .img2{
+    position: absolute;
+    width: 400px;
+    border: 10px solid white;
+   }
+   .content1{
+    width: 40%;
+   padding-top: 180px;
+   padding-right: 150px;
+   }
+   .content1 h2{
+    margin-bottom: 30px;
+    font-family:Arial;
+    position: relative;
+   }
+   .content1 h2::after{
+    content: " ";
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    width: 18%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    transform: scaleY(2);
+   }
+   .content1 p{
+    font-size: medium;
+    text-align: left;
+    line-height: 20px;
+    font-family: serif;
+   }
+   .but{
+     padding: 10px 30px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 3px;
+     background-color: rgb(0, 110, 255);
+     margin-top: 40px;
+     color: white;
+     border: none;
+  }
+   .ab-content{
+    width: 100%;
+    display:flex;
+    padding-bottom: 150px;
+  }
+  /* service */
+  .service-content{
+    width: 60%;
+    padding-right: 30px;
+    padding-top: 300px;
+    padding-left: 50px;
+  }
+  .service-content h1{
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .button{
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(0, 110, 255);
+    margin-top: 40px;
+    color: white;
+    border: none;
+   }
+  .service-content h1::before{
+     content: " ";
+     position: absolute;
+     top:  45px;
+     left: 0;
+     width: 80px;
+     border-bottom: 2px solid black;
+  }
+  .comblock1{
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 80px;
+  }
+  .comblock2{
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .block1{ 
+    text-align: center;
+      border:white ;
+      box-sizing: border-box;
+      box-shadow:   0 4px 8px 0 rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      margin-top: 30px;  
+   }
+   .block1 h3{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial;
+   }
+   .block2 h3{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial;
+   }
+   .block2{ 
+      text-align: center;
+      border:white ;
+      box-sizing: border-box;
+      box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      margin-top: 30px;
+   }
+   .ser-icon i{
+      font-size: 55px;
+      padding:20px;
+      color: dodgerblue;
+      border: 1px solid white;
+      box-shadow:  0 4px 4px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 60px;
+     
+   }
+   .service-section{
+    position: relative;
+    display: flex; 
+    width: 100%;
+    padding-bottom: 50px;
+   }
+   .button-2{
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 40px;
+    color: black;
+    border: none;
+   }
