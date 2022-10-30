@@ -1,0 +1,121 @@
+.grid-container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3,auto) ;
+    background-color: aqua;
+    gap: 5px;
+}
+.grid-container div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;  
+    font-size: 30px;
+  }
+
+
+.layout-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+.box{
+    background-color: aqua;
+    color: #fff;
+    font-size: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    grid-column: span 3;
+}
+.box2{
+    grid-row: span 3;
+}
+.box3{
+    grid-row: span 2;
+}
+.box4{
+    grid-row: span 3;
+}
+.box9{
+    grid-column: span 3;
+}
+
+
+
+.layout-sample{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h h h" 
+    "sb1 m m m sb2"
+    "f f f f f";
+}
+.header{
+    grid-area: h;
+}
+.said-bar1{
+    grid-area: sb1;
+}
+.main-content{
+    grid-area: m;
+}
+.footer{
+    grid-area: f;
+}
+.said-bar2{
+    grid-area: sb2;
+}
+.layout-sample div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+
+
+
+.animated-box{
+    background: blue;
+    width: 80px;
+    position: relative;
+    /* display: block; */
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: #fff;
+    animation: animated-box 3s 2s infinite ;
+}
+.animated-container{
+    width: auto;
+    height: 30vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animated-box{
+    0%  {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    50%  {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+    75%  {
+        transform: rotate(50deg);
+        left: 1000px;
+    }
+    100%  {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+    /* from {left: 0px;}
+    to {left: 800px; background-color: blue;} */
+} 
