@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-section{
+    background-image: url(images/bg-img.png);
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 800px;
+}
+.navbar{
+    background-color: #a5b4bd;
+    opacity: 0.9;
+}
+.navbar-nav li{
+    padding: 0px 20px;
+}
+.nav-link{
+    color: black !important;
+    font-size: 20px;
+    padding: 0px 0px !important;
+}
+.nav-link:hover{
+    color: #fff !important;
+    position: relative;
+}
+.nav-link:hover::before{
+    content: " ";
+    position:absolute ;
+    border-bottom: 3px solid #fff;
+    margin: auto;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    z-index: 1;
+}
+.nav-link-btn1{
+    text-decoration: none;
+     font-size: 20px;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    background-color: #F09B21; 
+    border-radius: 50px;
+}
+.nav-link-btn1:hover{
+    color: #fff;
+}
+.nav-link-btn2{
+    text-decoration: none;
+     font-size: 20px;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    background-color: #FF0000; 
+    border-radius: 50px;
+}
+.nav-link-btn2:hover{
+    color: #fff;
+}
+.home-section h1{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 60px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav-pills .nav-link {
+    background: #fff ;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 10px 150px !important;
+}
+.navt-pills .navt-link.active, .navt-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0d6efd;
+}
+.common-div{
+    padding: 50px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    position: relative;
+}
+.tab-unlist{
+    position: absolute;
+    top: -24px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.com-row{
+    padding: 50px;
+}
+
+
+/* common media screen */
