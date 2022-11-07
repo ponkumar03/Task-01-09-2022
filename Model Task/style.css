@@ -10,63 +10,68 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 800px;
+    /* padding-bottom: 800px; */
 }
 .navbar{
     background-color: #a5b4bd;
-    opacity: 0.9;
 }
-.navbar-nav li{
-    padding: 0px 20px;
+.container-fluid{
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.nav-btn li{
+    list-style: none;
 }
 .nav-link{
-    color: black !important;
-    font-size: 20px;
-    padding: 0px 0px !important;
+    color: black ;
+    font-family: Roboto, Medium;
+    font-size: 24px;
 }
+@media (min-width: 992px){ 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0px;
+    }
+}
+
 .nav-link:hover{
     color: #fff !important;
     position: relative;
-}
-.nav-link:hover::before{
-    content: " ";
-    position:absolute ;
     border-bottom: 3px solid #fff;
-    margin: auto;
-    top: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50px;
-    z-index: 1;
 }
 .nav-link-btn1{
     text-decoration: none;
-     font-size: 20px;
-    color: black;
+    font-family: Roboto, Medium;
+     font-size: 24px;
+    color: #fff;
     border: none;
+    /* line-height: 10px; */
     padding: 10px 20px;
     background-color: #F09B21; 
     border-radius: 50px;
+    margin-right: 30px;
 }
 .nav-link-btn1:hover{
-    color: #fff;
+    color: black;
 }
 .nav-link-btn2{
     text-decoration: none;
-     font-size: 20px;
-    color: black;
+    font-family: Roboto, Medium;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
     border: none;
     padding: 10px 20px;
     background-color: #FF0000; 
     border-radius: 50px;
 }
 .nav-link-btn2:hover{
-    color: #fff;
+    color: black;
 }
 .home-section h1{
     text-align: center;
-    padding-top: 200px;
+    font-family: Roboto, Bold;
+    font-size: 60px;
+    padding-top: 233px;
     padding-bottom: 50px;
     color: #fff;
     font-size: 60px;
@@ -82,18 +87,24 @@
 }
 .nav-pills .nav-link {
     background: #fff ;
+    color: black;
     border: 0;
-    border-radius: 0.25rem;
-    padding: 10px 150px !important;
+    font-size: 32px;
+    font-family: Roboto, Medium;
+    border-radius: 4px;
+    padding: 10px 150px;
 }
-.navt-pills .navt-link.active, .navt-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: black;
 }
-.common-div{
-    padding: 50px;
+.common-tab{
+    position: relative;
+    padding: 80px 50px 120px 50px;
     border: 3px solid #fff;
     border-radius: 30px;
+}
+.common-div{
     position: relative;
 }
 .tab-unlist{
@@ -102,14 +113,86 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 .card-title {
     margin-bottom: 0.5rem;
     text-align: center;
 }
-.com-row{
-    padding: 50px;
+/* common-btn */
+.com-btn{
+    position: relative;
+    top: -85px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
 }
+.tabs-btt{
+    padding: 0px 50px;
+  }
+.example1{
+    display:flex;
+    background-color: #fff;
+    border-radius: 16px;
+}
+.loc-in {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+  } 
+.fa-search{
+    padding: 8px;
+    line-height: 33px;
+    font-size: 27px;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    border-left: none;
+    cursor: pointer;
+  }
+  .example4{
+    display:flex;
+    background-color: red;
+    border-radius: 16px;
+}
+.sear-in {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+  } 
+  .sear-in::placeholder{
+    color: #fff;
+  }
+.fa-location-dot{
+    padding: 8px;
+    line-height: 33px;
+    font-size: 27px;
+    color: black;
+    font-size: 17px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    border-left: none;
+    cursor: pointer;
+  }
+.com-sel{
+    padding:13px 110px 13px 10px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+} 
 
 
 /* common media screen */

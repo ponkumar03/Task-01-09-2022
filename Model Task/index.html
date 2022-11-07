@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Task</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="home-section">
-        <div class="container">
             <nav class="navbar navbar-expand-lg navbar-white fixed-top">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"><img src="images/nav-img.png" alt="nav-img"></a>
@@ -21,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ms-auto px-5">
+                  <ul class="navbar-nav mx-auto d-flex">
                     <li class="nav-item">
                       <a class="nav-link" href="#">Home</a>
                     </li>
@@ -34,169 +34,165 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#">Contact us</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link-btn1" href="#">List Your Business</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link-btn2" href="#">Sign / Register</a>
-                    </li>
+                    
                   </ul>
                 </div>
+                <ul class="nav-btn d-flex" >
+                  <li class="nav-item">
+                    <a class="nav-link-btn1" href="#">List Your Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link-btn2" href="#">Sign / Register</a>
+                  </li>
+                </ul>
+              </div>
               </nav>
+        <div class="container">
               <h1>What You Want Book Today?</h1>
             <div class="common-div">
                 <div class="tab-unlist">
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Event Venue</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Stay Venue</button>
                           </li>
                       </ul>
                 </div>
-               
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="common-tab d-flex">
-                            <div class="card-imag">
+                        <div class="common-tab row ">
+                            <div class="card-imag col">
                                 <div class="card">
                                     <img class="card-img-top" src="images/card-img1.png" alt="Card image">
                                     <div class="card-body">
-                                      <h4 class="card-title">John Doe</h4>
+                                      <h4 class="card-title">Hall</h4>
                                     </div>
                                   </div>
                             </div>
-                            <div class="card-imag">
+                            <div class="card-imag col">
                                 <div class="card">
                                     <img class="card-img-top" src="images/card-img2.png" alt="Card image">
                                     <div class="card-body">
-                                      <h4 class="card-title">John Doe</h4>
+                                      <h4 class="card-title">Party Lawn</h4>
                                     </div>
                                   </div>
                             </div>
-                            <div class="card-imag">
+                            <div class="card-imag col">
                                 <div class="card">
                                     <img class="card-img-top" src="images/card-img3.png" alt="Card image">
                                     <div class="card-body">
-                                      <h4 class="card-title">John Doe</h4>
+                                      <h4 class="card-title">Farm House</h4>
                                     </div>
                                   </div>
                             </div>
-                            <div class="card-imag">
+                            <div class="card-imag col">
                                 <div class="card">
                                     <img class="card-img-top" src="images/card-img4.png" alt="Card image">
                                     <div class="card-body">
-                                      <h4 class="card-title">John Doe</h4>
+                                      <h4 class="card-title">Villa</h4>
                                     </div>
                                   </div>
                             </div>
-                            <div class="card-imag">
+                            <div class="card-imag col">
                                 <div class="card">
                                     <img class="card-img-top" src="images/card-img5.png" alt="Card image">
                                     <div class="card-body">
-                                      <h4 class="card-title">John Doe</h4>
+                                      <h4 class="card-title">Mall</h4>
                                     </div>
                                   </div>
                             </div>
                         </div>
                     </div>
                   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="common-tab d-flex">
-                        <div class="card-imag">
+                    <div class="common-tab row">
+                        <div class="card-imag col">
                             <div class="card">
                                 <img class="card-img-top" src="images/card-img1.png" alt="Card image">
                                 <div class="card-body">
-                                  <h4 class="card-title">John Doe</h4>
+                                  <h4 class="card-title">Hall</h4>
                                 </div>
                               </div>
                         </div>
-                        <div class="card-imag">
+                        <div class="card-imag col">
                             <div class="card">
                                 <img class="card-img-top" src="images/card-img2.png" alt="Card image">
                                 <div class="card-body">
-                                  <h4 class="card-title">John Doe</h4>
+                                  <h4 class="card-title">Party Lawn</h4>
                                 </div>
                               </div>
                         </div>
-                        <div class="card-imag">
+                        <div class="card-imag col">
                             <div class="card">
                                 <img class="card-img-top" src="images/card-img3.png" alt="Card image">
                                 <div class="card-body">
-                                  <h4 class="card-title">John Doe</h4>
+                                  <h4 class="card-title">Farm House</h4>
                                 </div>
                               </div>
                         </div>
-                        <div class="card-imag">
+                        <div class="card-imag col">
                             <div class="card">
                                 <img class="card-img-top" src="images/card-img4.png" alt="Card image">
                                 <div class="card-body">
-                                  <h4 class="card-title">John Doe</h4>
+                                  <h4 class="card-title">Villa</h4>
                                 </div>
                               </div>
                         </div>
-                        <div class="card-imag">
+                        <div class="card-imag col">
                             <div class="card">
-                                <img class="card-img-top" src="images/card-img3.png" alt="Card image">
+                                <img class="card-img-top" src="images/card-img5.png" alt="Card image">
                                 <div class="card-body">
-                                  <h4 class="card-title">John Doe</h4>
+                                  <h4 class="card-title">Mall</h4>
                                 </div>
                               </div>
                         </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-4">
-                        <a href="#"><span><i class="bi bi-geo-alt-fill"></i></span>City or Locatin</a>
-                    </div>
                 </div>
+                <div class="com-btn">
+                  <div class="tabs-btt row">
+                  <div class="col-lg-4">
+                  <form class="example1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input class="loc-in" type="text" placeholder="City or Location">
+                    
+                  </form>
+                  </div>
+                  <div class="col-lg-3">
+                    <form class="example2" action="/action_page.php">
+                      <select class="com-sel" name="place" id="place" aria-placeholder="Choose Venue Type">
+                        <option value="Choose Venue For">Choose Venue For</option>
+                        <option value="Hall">Hall</option>
+                        <option value="Party Lawn">Party Lawn</option>
+                        <option value="Farm House">Farm House</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Mall">Mall</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="col-lg-3">
+                    <form class="example3" action="/action_page.php">
+                      <select class="com-sel" name="place" id="place" aria-placeholder="Choose Venue Type">
+                        <option value="Choose Venue Type">Choose Venue Type</option>
+                        <option value="Hall">Hall</option>
+                        <option value="Party Lawn">Party Lawn</option>
+                        <option value="Farm House">Farm House</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Mall">Mall</option>
+                      </select>
+                    </form>
+                  </div>
+                 <div class="col-lg-2">
+                  <form class="example4" action="/action_page.php">
+                  <i class="fa fa-search"></i>
+                    <input class="sear-in" type="text" placeholder="Search..">
+                  </form>
+                 </div>
                 </div>
+              </div>
             </div>
-            <!-- <div class="container">
-                <div class="row com-row ">
-                  <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-img3.png" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-img3.png" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                        </div>
-                      </div>
-                  </div>
-               
-                  <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-img3.png" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-img3.png" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-img3.png" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div> -->
+           
         </div>     
     </section>
 </body>
