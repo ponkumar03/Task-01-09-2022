@@ -16,7 +16,7 @@
 </head>
 <body>
     <section class="home-section">
-      <nav class="navbar navbar-expand-lg navbar-light bgcolor" id="navbar_top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-fade fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="navbrand-img" src="images/nav-img.png" alt="nav-img"><a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -187,13 +187,13 @@
                   </div>
                 </div>
                 <div class="tabs-btt row">
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <form class="example1" action="/action_page.php">
                       <i class="fa-solid fa-location-dot"></i>
                       <input class="loc-in" type="text" placeholder="City or Location">
                     </form>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-6">
                     <form class="example2" action="/action_page.php">
                       <select class="com-sel1" name="place" id="place" aria-placeholder="Choose Venue Type">
                         <option value="Choose venue for">Choose Venue For</option>
@@ -205,7 +205,7 @@
                       </select>
                     </form>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-6">
                     <form class="example3" action="/action_page.php">
                       <select class="com-sel2" name="place" id="place" aria-placeholder="Choose Venue Type">
                         <option value="Choose venue type">Choose Venue Type</option>
@@ -217,7 +217,7 @@
                       </select>
                     </form>
                   </div>
-                 <div class="col-lg-2">
+                 <div class="col-lg-2 col-md-6">
                   <form class="example4" action="/action_page.php">
                     <i class="fa fa-search"></i>
                     <a class="sear-in" href="#">Search</a>
@@ -422,7 +422,7 @@
         <section class="choose venue">
           <div class="container">
             <div class="choose-heading">
-              <h1>Why Choose Fabvenue</h1>
+              <span class="span-heading"><h1>Why Choose Fabvenues</h1></span>
             </div>
              <div class="fab-img">
               <img class="img-fluid" src="images/fabe-img.png" alt="fab-img">
@@ -460,7 +460,7 @@
         <section class="bookstay-secttion">
           <div class="container">
             <div class="stay-heading">
-              <h1>Book stay venues with ease</h1>
+              <span class="span-heading"><h1>Book stay venues with ease</h1></span>
               <p>Book your venues securely with Fabvenues assurance of secure booking using safe & trusted Razorpay gateway</p>
             </div>
             <div class="bookstay-con">
@@ -508,11 +508,11 @@
               </div>
             </div>
             <div class="stay-heading">
-              <h1>Book event venues with ease</h1>
+              <span class="span-heading"><h1>Book event venues with ease</h1></span>
               <p>Book your venues securely with Fabvenues assurance of secure booking using safe & trusted Razorpay gateway</p>
             </div>
-            <div class="bookstay-con">
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="bookstay-con1">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
                 <div class="col">
                   <div class="card img-fluid">
                     <img class="card-img" src="images/num-1.png" alt="Card image">
@@ -568,8 +568,8 @@
         <!-- client-section -->
         <section class="client-sec">
           <div class="container">
-            <div class="carousel-hedaing">
-              <h1>What our clients says</h1>
+            <div class="client-hedaing">
+              <span class="span-heading"><h1>What our clients says</h1></span>
             </div>
               <div class="row">
                 <div class="col-sm-12">
@@ -653,36 +653,62 @@
                         <div class="mb-3 mt-3">
                           <textarea class="form-control" rows="3" id="comment" placeholder="message" name="text"></textarea>
                         </div>
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btnf ms-auto">Submit</button>
                       </form>
                     </div>
                   </div>  
             </div>
           </div>
         </section>
+        <!-- footer-section -->
+        <section class="footer-section">
+          <div class="container">
+            <p>© 2023 by Colton Properties. Proudly created with sparkouttech.com</p>
+          </div>
+        </section>
 
 
     <!-- navbar.js -->
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function(){
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 150) {
-            document.getElementById('navbar_top').classList.add('fixed-top');
-            navbar_height = document.querySelector('.navbar').offsetHeight;
-            document.body.style.paddingTop = navbar_height + 'px';
-          } else {
-             document.getElementById('navbar_top').classList.remove('fixed-top');
-            document.body.style.paddingTop = '0';
-          }
-        });
-      });
-    </script>
+  
+  <!-- //   <script type="text/javascript">
+  //     document.addEventListener("DOMContentLoaded", function(){
+  //       window.addEventListener('scroll', function() {
+  //         if (window.scrollY > 150) {
+  //           document.getElementById('navbar_top').classList.add('fixed-top');
+  //           navbar_height = document.querySelector('.navbar').offsetHeight;
+  //           document.body.style.paddingTop = navbar_height + 'px';
+  //         } else {
+  //            document.getElementById('navbar_top').classList.remove('fixed-top');
+  //           document.body.style.paddingTop = '0';
+  //         }
+  //       });
+  //     });
+  //   </script> -->
 
        <!-- jquery.min.css -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <!-- owl-carousal-min.js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- navbar.js -->
+   <script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+      $(".navbar").addClass("navbar-scroll");
+        }
+        else{
+      $(".navbar").removeClass("navbar-scroll");    
+    }
+    if (scroll > 200) {
+      $(".navbar").addClass("bg-secondary");
+    }
+    else{
+      $(".navbar").removeClass("bg-secondary");   
+    }
+  })
+})
+</script>
     <!-- carousel-js -->
     <script>
       jQuery(document).ready(function($) {
