@@ -624,6 +624,11 @@
 }
 /* common media query-home-section */
 /* navbar */
+@media screen and (max-width:425px) {
+    .navbrand-img{
+        width: 120px;
+    }
+}
 @media screen and (max-width:1440px) {
     .nav-links{
         font-size: 20px;
@@ -857,6 +862,22 @@
         padding: 10px 80px;
     }
 }
+/* @media screen 640px */
+@media screen and (max-width:640px) {
+    .nav-pills .nav-link{
+        font-size: 20px;
+        padding: 10px 50px;
+    } 
+    .com-sel1 {
+        font-size: 17px;
+        padding: 12px 23px 12px 10px;
+    }
+    .com-sel2 {
+        font-size: 17px;
+        padding: 12px 15px 12px 10px;
+    }
+}
+    
 @media screen and (max-width:320px) {
     .btn2{
         padding: 10px 32px;
@@ -978,6 +999,14 @@
         padding-bottom: 10px;
     }
 }
+@media screen and (max-width:640px) {
+    .carousel-hedaing h1{
+        font-size: 30px;
+    }
+    .carousel-hedaing h1::after {
+        width: 24%;
+    }
+}
 @media screen and (max-width:425px) {
     .carousel-hedaing h1 {
         font-size: 24px;
@@ -1061,6 +1090,11 @@
         font-size: 20px;
     }
 }
+@media screen and (max-width:640px) {
+    .banner-con h2 {
+        font-size: 15px;
+    }
+}
 @media screen and (max-width:1024px) {
     .baneer2-con h2{
         font-size: 27px;
@@ -1119,9 +1153,24 @@
         font-size: 20px;
     }
 }
+@media screen and (max-width:640px) {
+    .banner2-btn a{
+        margin: 10px;
+    } 
+    .card-img-overlay p{
+        font-size: 20px;
+    }
+    .card-img-overlay {
+        top: 40%;
+    }
+    .banner-img{
+        border-radius: 19px; 
+    }
+   
+}
 @media screen and (max-width:425px){
     .baneer2-con h2 {
-        font-size: 27px;
+        font-size: 26px;
         padding: 10px 0px;
         
     }
@@ -1131,9 +1180,10 @@
     .banner2-btn{
         margin-bottom: 10px;
     }
-    .banner-img{
-        border-radius: 19px; 
+    .card-img-overlay {
+        top: 70%;
     }
+    
 }
 /* book-events */
 @media screen and (max-width:768px) {
@@ -1149,11 +1199,17 @@
     .fab-content p{
         font-size: 19px;
     }
-}
-@media screen and (max-width:1024px) {
     .card-con{
         font-size: 18px;
         line-height: 22px;
+    } 
+}
+@media screen and (max-width:640px) {
+   .fab-content h1 {
+        font-size: 22px;
+    }
+    .fab-content p {
+        font-size: 17px;
     }
 }
 @media screen and (max-width:425px) {
@@ -1169,6 +1225,20 @@
     .card-img-overlay {
         top: 50%;
     }
+    .nav-pills .nav-link {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .banner-con {
+        padding: 0px 25px;
+    }
+    .banner-con h2 {
+        font-size: 20px;
+    }
+    .baneer2-con h2 {
+        font-size: 21px;
+    }
+    
 }
 @media screen and (max-width:768px) {
     .choose-heading{
@@ -1201,6 +1271,49 @@
         font-size: 20px;
     }
 }
-
-
-
+@media screen and (max-width:640px) {
+    .stay-heading p {
+        font-size: 20px;
+    }
+    .contact-section h1 {
+        font-size: 18px;
+    }
+    .con1 ul {
+        font-size: 18px;
+    }
+    .con2 {
+        font-size: 19px;
+    }
+    .card-con {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width:425px) {
+    .fab-content h1 {
+        font-size: 30px;
+    }
+    .contact-section h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:320px) {
+    .span-heading h1{
+        font-size: 21px;
+    }
+    .span-heading{
+        border-top: none;
+    }
+    .stay-heading p {
+        font-size: 15px;
+    }
+    .fab-content h1 {
+        font-size: 22px;
+    }
+    .contact-section h1 {
+        font-size: 22px;
+    }
+    .footer-section p {
+        font-size: 15px;
+    }
+}
