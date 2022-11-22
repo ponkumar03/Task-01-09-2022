@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax-scrolling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Parallax-scrolling Method</h1>
+    <section class="sec1">
+        <div class="contents">
+            <h2>Taj Mahal</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="contents">
+            <h2>Christ Redeemer</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="contents">
+            <h2>Roman Colosseum</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="contents">
+            <h2>Chichen Itza</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec5">
+        <div class="contents">
+            <h2>Machu Picchu</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec6">
+        <div class="contents">
+            <h2>Petra, Jordan</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="sec7">
+        <div class="contents">
+        <h2>The Great Wall of China</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta distinctio, et voluptatem similique nostrum corrupti aliquid nulla sed eaque tempora dolorum, inventore fuga accusamus eos illum eveniet vero dicta.</p>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="main">
+
+            <h1>PORTFOLIO.COM</h1>
+            <hr>
+            
+            <h2>PORTFOLIO</h2>
+            
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+              <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+              <button class="btn" onclick="filterSelection('people')"> People</button>
+            </div>
+            
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="col-lg-4 column nature">
+                <div class="content">
+                  <img src="images/pic5.jpeg" alt="Mountains" style="width:100%">
+                  <h4>Mountains</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="col-lg-4 column nature">
+                <div class="content">
+                <img src="images/pic6.jpeg" alt="Lights" style="width:100%">
+                  <h4>Lights</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+              <div class="col-lg-4 column nature">
+                <div class="content">
+                  <img src="images/pic7.jpg" alt="Car" style="width:100%">
+                  <h4>Retro</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+               <div class="col-lg-4 column cars">
+                <div class="content">
+                <img src="images/c3.jpg" alt="Nature" style="width:100%">
+                  <h4>Forest</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="col-lg-4 column cars">
+                <div class="content">
+                <img src="images/c2.jpg" alt="Car" style="width:100%">
+                  <h4>Fast</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="col-lg-4 column cars">
+                <div class="content">
+                <img src="images/c3.jpg" alt="Car" style="width:100%">
+                  <h4>Classic</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+            
+              <div class="col-lg-4 column people">
+                <div class="content">
+                  <img src="images/tp3.jpg" alt="Car" style="width:100%">
+                  <h4>Girl</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="col-lg-4 column people">
+                <div class="content">
+                <img src="/images/tp1.jpg" alt="Car" style="width:100%">
+                  <h4>Man</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="col-lg-4 column people">
+                <div class="content">
+                <img src="images/tp3.jpg" alt="Car" style="width:100%">
+                  <h4>Woman</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+            <!-- END GRID -->
+            </div>
+            
+            <!-- END MAIN -->
+            </div>
+    </section>
+
+    <!-- portfolio-js -->
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+</html>
