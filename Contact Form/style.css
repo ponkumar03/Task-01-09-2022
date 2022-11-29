@@ -157,3 +157,43 @@ input[type="submit"], input[type="reset"] {
 td {    
     padding: 10px;    
 }
+
+/* auto-complete-form */
+.container-4{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+.autocomplete-form{
+   width: 75vmin;
+   height: 100%;
+   padding: 40px 0;
+}
+.auto-input[type="text"]{
+    width: 100%;
+    padding: 15px 10px;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #645979;
+    outline: none;
+    border-radius: 5px;
+    background: #645979;
+}
+.auto-input[type="text"]::placeholder{
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+.list{
+    width: 100%;
+    background-color: #645979;
+    border-radius: 0 0 5px 5px;
+}
+.list-items{
+    padding: 10px 5px;
+}

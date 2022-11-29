@@ -39,6 +39,7 @@
             </form>
         </div>
     </section>
+    <!-- form-2 -->
     <section class="form-2">
         <h2 class="form-heading">Form-modal</h2>
        <div class="cotainer-2">
@@ -58,9 +59,10 @@
         </form>
        </div>
     </section>
+    <!-- form-3 -->
     <section class="form-3">
         <div class="container-3">       
-            <form method="" action="" name="reg_form" onsubmit="return validate()">    
+            <form method="post" action="" name="reg_form" onsubmit="return validate()">    
                 <h2>Registration Form</h2>    
                 <table>    
                     <tr>    
@@ -87,7 +89,11 @@
                             <input type="radio" name="gender" value="male">Male    
                             <input type="radio" name="gender" value="femele">Female    
                         </td>    
-                    </tr>    
+                    </tr>  
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="date" min="1981-01-01"></td>
+                    </tr>  
                     <tr>    
                         <td><label>Email Id: </label></td>    
                         <td>    
@@ -99,18 +105,31 @@
                         <td>    
                             <input type="number" name="mobile">    
                         </td>    
-                    </tr>    
+                    </tr> 
+                    <tr>
+                        <td>Country</td>
+                        <td><input type="text" value="India" name="country" readonly="readonly"></td>
+                    </tr>   
                     <tr>    
-                    <td><label>Course: </label></td>    
+                    <td><label>State: </label></td>    
                         <td>    
-                            <select name="course">    
-                                <option value="select course">select course</option>    
-                                <option value="HTML">HTML</option>    
-                                <option value="CSS">CSS</option>    
-                                <option value="JavaScript">JAVASCRIPT</option>    
-                                <option value="Java">JAVA</option>    
+                            <select name="state">    
+                                <option value="select state">select state</option>    
+                                <option value="HTML">TamilNadu</option>    
+                                <option value="CSS">Kerala</option>    
+                                <option value="JavaScript">Delhi</option>    
+                                <option value="Java">Kolkata</option>    
                             </select>    
                         </td>    
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            Drawing;<input type="checkbox" name="hobby" id="hobby" value="draw">
+                            Playing;<input type="checkbox" name="hobby" id="hobby" value="play">
+                            swimming;<input type="checkbox" name="hobby" id="hobby" value="swim">
+                            Traveling;<input type="checkbox" name="hobby" id="hobby" value="travel">
+                        </td>
                     </tr>    
                     <tr>    
                         <td class="form-btn">    
@@ -120,6 +139,17 @@
                     </tr>             
                 </table>    
             </form> 
+        </div>
+    </section>
+    <!-- Auto-complete-section -->
+    <section class="auto-complete">
+        <div class="container-4">
+            <form class="autocomplete-form" autocomplete="off">
+                <div>
+                    <input class="auto-input" type="text" id="input" placeholder="Type aname here ...">
+                </div>
+                <ul class="list"></ul>
+            </form>
         </div>
     </section>
 <!-- contact-form.js -->
@@ -232,10 +262,12 @@
             var fname = document.reg_form.fname;    
             var lname = document.reg_form.lname;    
             var address = document.reg_form.address;    
-            var gender = document.reg_form.gender;    
+            var gender = document.reg_form.gender; 
+            var date = document.reg_form.date;   
             var email = document.reg_form.email;    
             var mobile = document.reg_form.mobile;    
-            var course = document.reg_form.course;    
+            var state = document.reg_form.state;  
+            var hobby = document.reg_form.hobby;   
     
             if (fname.value.length <= 0) {    
                 alert("Name is required");    
@@ -256,7 +288,12 @@
                 alert("Gender is required");    
                 gender.focus();    
                 return false;    
-            }    
+            } 
+            if (date.value.length <= 0) {    
+                alert("date is required");    
+                date.focus();    
+                return false;    
+            }  
             if (email.value.length <= 0) {    
                 alert("Email Id is required");    
                 email.focus();    
@@ -267,13 +304,54 @@
                 mobile.focus();    
                 return false;    
             }    
-            if (course.value == "select course") {    
-                alert("Course is required");    
-                course.focus();    
+            if (state.value == "select state") {    
+                alert("select state is required");    
+                state.focus();    
                 return false;    
             }    
+            if (hobby.value.length <= 0) {    
+                alert("select your hobby ");    
+                hobby.focus();    
+                return false;
+            }
             return false;    
         }    
     </script> 
+    <!-- input-auto-complete -->
+    <script>
+        let names =["Ayla","Jake","Sean","Henry","Brad","Stephen","Taylor","Timmy","Cathy","Jhon","Sam","Danny","Ellan","Camile","Emily"];
+
+        let sortedNames = names.sort();
+        let input = document.getElementById("input");
+
+        input.addEventListener("keyup",(e) => {
+            for(let i of sortedNames){
+                removeElements();
+                if(i. toLocaleLowerCase().startsWith(input.value.toLowerCase()) && 
+                  input.value != ""){
+                    let listItem = document.createElement("li");
+
+                    listItem.classList.add("list-item");
+                    listItem.style.cursor = "pointer";
+                    listItem.setAttribute("onclick","displayNames('"+ i +"')");
+                    let word ="<b>" + i.substr(0,input.value.length)+"<b>";
+                        word += i.substr(input.value.length); 
+
+                        listItem.innerHTML = word;
+                        document.querySelector(".list").appendChild(listItem);
+                  }
+            }
+        });
+        function displayNames(value){
+            input.value= value;
+            removeElements();
+        }
+        function removeElements(){
+            let items = document.querySelectorAll(".list-items");
+            items.forEach((item) => {
+                item.remove();
+            });
+        }
+    </script>
 </body>
 </html>
