@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Methods</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+<p>The model of function:</p>
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+<!-- fullName method -->
+<h2>JavaScript functions</h2>
+<p>This example calls the fullName method of person, using it on person1:</p>
+<!-- // The call() Method with Arguments -->
+<p id="demo3"></p>
+<!-- // The apply() Method with Arguments -->
+<p id="demo4"></p>
+<!-- JavaScript Function bind() Function Borrowing -->
+<p id="demo5"></p>
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+// The model of function
+const x = function (a, b) {return a * b};
+document.getElementById("demo1").innerHTML = x(4, 3);
+
+// The JavaScript call() Method
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+document.getElementById("demo2").innerHTML = person.fullName.call(person1);
+
+// The call() Method with Arguments
+const persons = {
+    fullName: function(city, country){
+        return this.firstName +" "+this.lastName +", "+city +", "+country;
+    }
+}
+const person3 = {
+    firstName:"Jone",
+    lastName:"Doe"
+}
+document.getElementById("demo3").innerHTML =
+persons.fullName.call(person3, "Oslo", "Norway");
+
+// The apply() Method with Arguments
+const men = {
+    fullName:function(city, country){
+        return this.firstName +" "+ this.lastName +" "+city +" "+country;
+    }
+}
+const person4 ={
+    firstName:"Jone",
+    lastName:"Doe"
+}
+document.getElementById("demo4").innerHTML =
+men.fullName.apply(person4,["Oslo", "Norway"]);
+
+// JavaScript Function bind()
+const mens ={
+    firstName:"Jone",
+    lastName:"Doe",
+    fullName:function(){
+       return this.firstName +" "+ this.lastName;
+    }
+}
+const member ={
+    firstName:"Hege",
+  lastName: "Nilsen",
+}
+ let fullName = mens.fullName.bind(member)
+ document.getElementById("demo5").innerHTML = fullName();
+</script> 
+</body>
+</html>
