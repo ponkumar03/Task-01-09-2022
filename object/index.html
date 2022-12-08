@@ -21,6 +21,17 @@
 <h2>Display properties in JSON format</h2>
 <p id="demo3"></p>
 
+<h2>JavaScript Getters and Setters</h2>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<h2>JavaScript Object Constructors</h2>
+<p id="demo6"></p>
+
+<h2>JavaScript Iterables</h2>
+<p>Iterate over a Set:</p>
+
+<p id="demo7"></p>
 <script>
 const person = {
   firstname: "John",
@@ -74,6 +85,65 @@ document.getElementById("demo2").innerHTML=x;
   };
   
   document.getElementById("demo3").innerHTML = JSON.stringify(person2);
+  </script>
+
+  <!-- object get Method -->
+  <script>
+   const person3 = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+document.getElementById("demo4").innerHTML = person3.lang;
+  </script>
+
+<script>
+  // Create an object:
+  const person4 = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(lang) {
+      this.language = lang.toUpperCase();
+    }
+  };
+  
+  // Set a property using set:
+  person4.lang = "en";
+  
+  // Display data from the object:
+  document.getElementById("demo5").innerHTML = person4.language;
+  </script>
+
+<!-- JavaScript Object Constructors -->
+  <script>
+    function person5(first,last,age,eye){
+      this.firstname = first;
+      this.lastname = last;
+      this.age = age;
+      this.eyecolor = eye;
+    }
+    // Create two Person objects
+    const myFather = new person5("Jone","Doe",50,"blue");
+    const myMother = new person5("Sally", "Rally", 48, "green");
+
+    document.getElementById("demo6").innerHTML="My father is"+ myFather.age +".<br/>"+"My mother is"+myMother.age+".";
+  </script>
+  <!-- JavaScript Iterables -->
+  <script>
+    // Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all Elements
+let text = "";
+for (const x of letters) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo7").innerHTML = text;
   </script>
 </body>
 </html>
