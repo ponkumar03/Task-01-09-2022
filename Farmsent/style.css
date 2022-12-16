@@ -50,7 +50,7 @@
     background-color: #E7D3C6;
     color: #60311B;
 }
-label {
+/* label {
     display:block;
     font-family: Be Vietnam;
     font-size: 10px;
@@ -65,39 +65,30 @@ label {
 select{
     border: none;
     color: #60311B;
-}
+} */
 .nav-icon a{
     margin-left: 42px;  
-    background-color: #E8D3C6;
-    color: black;
-    width: 52px;
-    height: 52px;
+    /* background-color: #E8D3C6; */
+    color: #60311B;
+    /* width: 52px;
+    height: 52px; */
     font-size: 20px;
     text-decoration: none;
-    border-radius: 50%;
+    /* border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.home-condent{
-    background-image: url(images/home-imge.png);
-    background-size: cover;
-    border-radius: 25px;
-    background-repeat: no-repeat;
-    padding-bottom: 178px;
-    margin-top: 73px;
-
+    justify-content: center; */
 }
 .home-condent h1{
-    font-family: Be Vietnam;
-    color: #fff;
+    font-family: Be Vietnam pro;
+    color: #231F1B;
     font-size: 56px;
     padding-top:178px ;
     padding-left: 100px;
 }
 .home-condent p{
-    font-family: Be Vietnam;
-    color: #E7D3C6;
+    font-family: Be Vietnam pro;
+    color: #000;
     font-size: 28px;
     padding-top:20px ;
     padding-left: 100px;
@@ -110,14 +101,14 @@ select{
     text-decoration: none;
 }
 .home-btn .button1{
-    font-family: Be Vietnam ;
+    font-family: Be Vietnam pro;
     font-size: 21px;
     color: #FFF;
-    background-color: #60311B;
-    border-radius: 35px;
+    background-color: #AC7046;
+    border-radius: 10px;
     position: relative;
     padding: 18px 77px 17px 30px;
-    border: #60311B;
+    border:1px solid #AC7046;
 }
 .button1 .fa-arrow-right{
     position:absolute;
@@ -134,20 +125,20 @@ select{
     justify-content: center;
 }
 .home-btn .button2{
-    font-family: Be Vietnam ;
+    font-family: Be Vietnam pro ;
     font-size: 21px;
-    color: #fff;
-    background-color: #AC7045;
-    border: #AC7045;
-    border-radius: 35px;
+    color: #AC7046;
+    background-color: transparent;
+    border:1px solid #AC7045;
+    border-radius: 10px;
     position: relative;
     padding: 18px 77px 17px 30px;
     margin-left: 30px;
 }
 .button2 .fa-arrow-right{
     position:absolute;
-    background-color: #E8D3C6;
-    color: #60311B;
+    background-color: #AC7046;
+    color: #E8D3C6;
     width: 44px;
     height: 43px;
     top: 13px;
@@ -219,6 +210,82 @@ select{
 }
 .logo-sec{
     padding-top: 60px;
+    padding-bottom: 189px;
+}
+/* section-3 */
+.sec3-heading h2{
+    text-align: center;
+    font: normal normal 600 46px/58px Be Vietnam Pro;
+    color: #60311B;
+}
+.sec3-heading p{
+    text-align: center;
+    font: normal normal 300 28px/42px Be Vietnam Pro;
+}
+.sec3-icon{
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 30px;
+}
+.icon-logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.sec3-icon i{
+    font-size: 14px;
+    color: #60311B;
+}
+.sec3-icon h6{
+    padding: 0px 20px;
+    font-size: 16px;
+    font-family: Be Vietnam Pro;
+}
+.card{
+    border-radius: 15px;
+}
+.card-body p{
+    padding-top: 12px;
+padding-bottom: 28px;
+}
+.com-progress p{
+    padding: 0px;
+    margin: 0px;
+}
+.progress{
+    padding: 0;
+    height: 10px;
+}
+.progress-bar{
+    background-color: #60311B;
+}
+.com-progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-img{
+    float: right;
+}
+.cry-img{
+    padding-right: 10px;
+}
+.sec3-btn .button3 {
+    font-family: Be Vietnam;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E8D3C6;
+    background-color: #AC7046;
+    border: #AC7046;
+    border-radius: 35px;
+    position: relative;
+    padding: 12px 59px 12px 29px;
+}
+.sec3-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
     padding-bottom: 189px;
 }
 /* section-4 */
@@ -301,6 +368,9 @@ select{
     padding-bottom: 204px;
 }
 /* section-5 */
+.section-5{
+    background-color: #F9F3EF;
+}
 .sce5-border{
     padding-bottom: 100px;
     border-bottom: 1px solid #231F1B;
@@ -345,3 +415,110 @@ select{
     color: #000;
 }
 /* section-6 */
+.section-6{
+    background-image:url(images/bg-img.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mobile-img{
+    padding-top: 95px;
+}
+.sec6-con h2{
+    padding-top: 185px;
+    font-family:Be Vietnam Pro ;
+    font-size: 46px;
+    color: #60311B;
+}
+.sec6-con p{
+    font-family:Be Vietnam Pro ;
+    font-size: 24px;
+    color: #000;
+}
+.sec6-con{
+    padding-right: 100px;
+}
+.app-buttons{
+    padding-top: 40px;
+}
+.app-img{
+    border-radius: 17px;
+}
+.play-img{
+    margin-left: 30px;
+    border-radius: 17px;
+}
+/* section-7 */
+.section-7{
+    padding-top: 189px;
+    padding-bottom: 89px;
+    background-color: #000;
+}
+.contact-logo{
+    color: #E7D3C6;
+}
+.contact-con h3{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    color: #FFF;
+    padding-top: 58px;
+}
+.contact-con p{
+    font-family: Be Vietnam Pro;
+    font-size: 26px;
+    color: #FFF;
+    padding-bottom: 62px;
+}
+.contact-menu ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.contact-menu li a{
+    text-decoration: none;
+    font-family:Be Vietnam Pro ;
+    font-size: 24px;
+    line-height: 54px;
+    color: #FFF;
+}
+.contact-icon img{
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.contact-icon img:first-child{
+    padding-left: 0px;
+}
+.form-btn{
+    padding-top: 45px;
+}
+input{
+    font-family:Be Vietnam Pro ;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 18px 170px 18px 30px;
+    color: #979797;
+}
+button.btn{
+    font-family:Be Vietnam Pro ;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 18px 38px 18px 38px;
+    background-color: #AC7046;
+    color: #F9F3EF;
+}
+.copyright-sec ul{
+    font-family:Be Vietnam Pro ;
+    font-size: 22px;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    padding-top: 59px;
+}
+.copyright-sec ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright-sec ul li{
+    padding-left: 50px;
+}
+.copyright-sec ul li:first-child{
+    padding-left: 0px;
+}
