@@ -110,6 +110,10 @@ select{
     padding: 18px 77px 17px 30px;
     border:1px solid #AC7046;
 }
+.home-btn .button1:hover{
+    background-color:#60311B ;
+    color:#E8D3C6;
+}
 .button1 .fa-arrow-right{
     position:absolute;
     background-color: #E8D3C6;
@@ -134,6 +138,10 @@ select{
     position: relative;
     padding: 18px 77px 17px 30px;
     margin-left: 30px;
+}
+.home-btn .button2:hover{
+    background-color: #60311B;
+    color: #E8D3C6;
 }
 .button2 .fa-arrow-right{
     position:absolute;
@@ -307,6 +315,8 @@ padding-bottom: 28px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 22px;
     padding: 24px 230px 24px 230px;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: #fff;
     background-color: #231F1B;
@@ -323,6 +333,7 @@ padding-bottom: 28px;
 .card-link1 i{
     font-size: 20px;
     margin-left: 20px;
+    line-height: 33px;
 }
 .card1{
     padding: 0px 20px;
@@ -348,6 +359,8 @@ padding-bottom: 28px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 22px;
     padding: 24px 230px 24px 230px;
+    display: flex;
+    justify-content: center;
     color: #000;
     border-radius: 0px 0px 20px 20px;
     background-color: #F9F3EF;
@@ -362,6 +375,7 @@ padding-bottom: 28px;
 .card-link2 i{
     font-size: 20px;
     margin-left: 20px;
+    line-height: 33px;
 }
 .common-card{
     padding-top: 60px;
@@ -479,11 +493,11 @@ padding-bottom: 28px;
     line-height: 54px;
     color: #FFF;
 }
-.contact-icon img{
+.contact-icon a{
     padding-left: 60px;
     padding-top: 10px;
 }
-.contact-icon img:first-child{
+.contact-icon a:first-child{
     padding-left: 0px;
 }
 .form-btn{
@@ -521,4 +535,612 @@ button.btn{
 }
 .copyright-sec ul li:first-child{
     padding-left: 0px;
+}
+
+
+/* Media Screen */
+/* media screen- 1440px */
+@media screen and (max-width:1440px) {
+    .navbar{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .home-condent h1{
+        padding-left: 0px;
+    }
+    .home-condent p{
+        padding-left: 0px;
+    }
+    .home-btn{
+        padding-left: 0px;
+    }
+    .nav-link{
+        margin-left: 30px;
+    }
+}
+
+/* media screen-1340px */
+@media screen and (max-width:1340px) {
+    .home-condent h1{
+        padding-top: 130px;
+    }
+    .logo-sec{
+        padding-bottom: 100px;
+    }
+    .card-body h5{
+        font-size: 16px;
+    }
+    .pro-s span{
+        font-size: 15px;
+    }
+    .sec3-icon{
+        padding-bottom: 10px;
+    }
+    .card-body p{
+        padding-bottom: 0px;
+    }
+    .sec3-btn{
+        padding-bottom: 100px;
+    }
+    .sec-content h2{
+        font-size: 40px;
+    }
+    .sec-content p{
+        font-size: 24px;
+    }
+    .common-card{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .card-body1 h3{
+        font-size: 30px;
+    }
+    .card-body2 h3{
+        font-size: 30px;
+    }
+    .card-link1 p{
+        padding: 24px 170px 24px 170px;
+    }
+    .card-link2 p{
+        padding: 24px 170px 24px 170px;
+    }
+    .sec5-heading h2{
+        font-size: 35px;
+    }
+    .com-con{
+        padding: 0px;
+    }
+    .sce5-border{
+        padding-bottom: 50px;
+    }
+    .sec6-con h2{
+        padding-top: 100px;
+    }
+    .sec6-con {
+        padding-right: 50px;
+    }
+    .contact-con p{
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    input{
+        padding: 18px 100px 18px 30px;
+    }
+    .section-7{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+/* media-screen-1199px */
+@media screen and (max-width:1199px) {
+    .nav-link{
+        margin-left: 0px;
+    }
+    .home-condent h1{
+        font-size: 50px;
+    }
+    .sec2-content{
+        width: 170px;
+    }
+    .sec2-logo{
+        padding: 34px 30px 24px 30px;
+    }
+    .card-body h5 {
+        font-size: 12px;
+    }
+    .sec3-icon h6 {
+        padding: 0px 10px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+    .pro-s span {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    .card-body1 h3 {
+        font-size: 25px;
+    }
+    .card-body2 h3 {
+        font-size: 25px;
+    }
+    .card-body1 p{
+        font-size: 14px;
+    }
+    .card-body2 p{
+        font-size: 14px;
+    }
+    .card-body p {
+        font-size: 14px;
+    }
+    .card-link1 p {
+        padding: 24px 20px 24px 20px;
+        font-size: 17px;
+    }
+    .card-link2 p {
+        padding: 24px 20px 24px 20px;
+        font-size: 17px;
+    }
+    .card-link1 i{
+        line-height: 26px;
+    } 
+    .card-link2 i{
+        line-height: 26px;
+    }
+    .sec-content h2 {
+        font-size: 30px;
+    }
+    .sec-content p {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .sec5-con h3{
+        font-size: 30px;
+    }
+    .sec5-con p{
+        font-size: 22px;
+    }
+    .sec6-con h2{
+        font-size: 35px;
+    }
+    .sec6-con p{
+        font-size: 19px;
+    }
+    .contact-con p{
+        font-size: 20px;
+    }
+    .contact-menu li a{
+        font-size: 20px;
+    }
+    button.btn{
+        font-size: 15px;
+    }
+    input{
+        font-size: 15px;
+        padding: 18px 60px 18px 30px;
+    }
+    .copyright-sec ul li{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+}
+
+/* media screen-1024 */
+@media screen and (max-width:1024px) {
+    .nav-link{
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+    .nav-login{
+        font-size: 15px;
+        padding: 15px 20px;
+        line-height: 15px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0px 20px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+        padding: 0px 20px;
+    }
+    .nav-icon a{
+        margin-left: 25px;
+    }
+}
+
+/* media screen-991 */
+@media screen and (max-width:991px) {
+    .home-condent h1 {
+        font-size: 40px;
+    }
+    .home-condent p {
+        font-size: 20px;
+    }
+    .home-btn .button1{
+        font-size: 15px;
+    }
+    .button1 .fa-arrow-right{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .home-btn .button2{
+        font-size: 15px;
+    }
+    .button2 .fa-arrow-right{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .sec-content p {
+        font-size: 18px;
+    }
+    .sec2-btn.button3{
+        font-size: 18px;
+        padding: 10px 50px 10px 30px;
+    }
+    .button3 .fa-arrow-right{
+        width: 30px;
+        height: 30px;
+        top: 15px;
+    }
+    .section-2 {
+        padding-top: 80px;
+    }
+    .logo-sec {
+        padding-bottom: 80px;
+        row-gap: 30px;
+    }
+    .card-body h5 {
+        font-size: 15px;
+    }
+    .sec3-icon h6 {
+        padding: 0px 30px;
+    }
+    .pro-s span {
+        font-size: 15px;
+    }
+    .card-body p {
+        font-size: 18px;
+    }
+    .sec-content h2 {
+        font-size: 25px;
+    }
+    .sec-content p {
+        font-size: 15px;
+    }
+    .common-card{
+        padding-bottom: 50px;
+    }
+    .sec5-con h3 {
+        font-size: 24px;
+    }
+    .sec5-con p {
+        font-size: 16px;
+    }
+    .sec6-con h2 {
+        padding-top: 50px;
+    }
+    .app-buttons {
+    padding-bottom: 40px;
+    }
+    input {
+        font-size: 15px;
+        padding: 18px 30px 18px 20px;
+    }
+    button.btn{
+        padding: 18px 16px 18px 16px
+    }
+    .copyright-sec ul li {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .card-body1 h3 {
+        font-size: 18px;
+    }
+    .card-body2 h3 {
+        font-size: 18px;
+    }
+}
+/* media-screen-640 */
+@media screen and (max-width:640px) {
+    .home-condent h1 {
+        font-size: 35px;
+        padding-top: 100px;
+    }
+    .home-condent p {
+        font-size: 18px;
+    }
+    .sec-content p {
+        font-size: 14px;
+    }
+    .button3 .fa-arrow-right {
+        width: 20px;
+        height: 20px;
+    }
+    .sec2-btn .button3 {
+        font-size: 18px;
+        padding: 8px 50px 8px 30px;
+    }
+    .sec2-content {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .sec3-heading h2{
+        font-size: 35px;
+    }
+    .sec3-heading p{
+        font-size: 25px;
+    }.sec-content h2 {
+        font-size: 18px;
+    }
+    .sec5-heading h2 {
+        font-size: 25px;
+        padding-bottom: 45px;
+    }
+    .sec-content p{
+        margin-bottom: 0px;
+    }
+    .sec5-con h3 {
+        font-size: 17px;
+    }
+    .sec5-con p {
+        font-size: 12px;
+    }
+    .form-btn {
+        padding-top: 0px;
+    }
+    .sec3-btn .button3 {
+        font-size: 20px;
+        padding: 8px 50px 8px 30px;
+    }
+    button.btn {
+        padding: 18px 30px 18px 30px;
+    }
+}
+/* media-screen-480px */
+@media screen and (max-width:480px) {
+    .home-condent h1 {
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .home-condent p {
+        font-size: 14px;
+    }
+    .home-btn .button1 {
+        padding: 15px 60px 15px 20px;
+    }
+    .home-btn .button2 {
+        padding: 15px 60px 15px 20px;
+    }
+    .logo-sec {
+        padding-top: 50px;
+    }
+    .sec-content h2 {
+        font-size: 22px;
+    }
+    .sec-content p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sec2-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec3-heading p {
+        font-size: 20px;
+    }
+    .sec3-heading h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .card-body h5 {
+        font-size: 20px;
+    }
+    .sec3-icon h6 {
+        font-size: 15px;
+    }
+    .pro-s span {
+        font-size: 15px;
+        justify-content: center;
+        display: flex;
+    }
+    .sec5-con h3 {
+        font-size: 24px;
+    }
+    .sec5-con p {
+        font-size: 20px;
+    }
+    .com-con {
+        margin-bottom: 30px;
+    }
+    .sec3-icon {
+        padding-bottom: 20px;
+    }
+    .card-body p{
+        padding-top: 20px;
+    }
+}
+
+/* media-screen-425px */
+@media screen and (max-width:425px) {
+    .navbar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .home-condent h1 {
+        font-size: 25px;
+    }
+    .sec3-heading p {
+        font-size: 18px;
+    }
+    .sec-content h2 {
+        font-size: 20px;
+    }
+    .sec3-btn {
+        padding-bottom: 50px;
+    }
+    .sec5-heading h2 {
+        font-size: 20px;
+    }
+    .sec6-con h2 {
+        font-size: 30px;
+    }
+    .sec6-con p {
+        font-size: 16px;
+    }
+    .app-img{
+        width: 150px;
+    }
+    .play-img{
+        width: 150px;
+    }
+}
+
+/* media-screen-320px */
+@media screen and (max-width:320px) {
+    .navbar {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navbar-brand{
+        width: 200px;
+    }
+    .home-condent h1 {
+        font-size: 21px;
+        padding-top: 50px;
+    }
+    .home-condent p {
+        font-size: 11px;
+    }
+    .home-btn .button1 {
+        font-size: 10px;
+        padding: 12px 40px 12px 20px;
+    }
+    .button1 .fa-arrow-right {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+    }
+    .home-btn .button2 {
+        font-size: 10px;
+        padding: 12px 40px 12px 20px;
+    }
+    .button2 .fa-arrow-right {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+    }
+    .sec2-btn .button3 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .button3 .fa-arrow-right {
+        font-size: 15px;
+        top: 10px;
+    }
+    .logo-sec {
+        padding-bottom: 50px;
+    }
+    .sec3-heading h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .sec3-heading p {
+        font-size: 14px;
+    }
+    .sec3-btn .button3 {
+        font-size: 15px;
+        padding: 8px 40px 8px 30px;
+        line-height: 25px;
+    }
+    .card-body1 h3 {
+        font-size: 15px;
+    }
+    .card-body1 p {
+        font-size: 10px;
+    }
+    .card-link1 p {
+        padding: 15px 20px 15px 20px;
+        font-size: 15px;
+    }
+    .card-link1 i {
+        font-size: 15px;
+    }
+    .card-body2 h3 {
+        font-size: 15px;
+    }
+    .card-body2 p {
+        font-size: 10px;
+    }
+    .card-link2 p {
+        padding: 15px 20px 15px 20px;
+        font-size: 15px;
+    }
+    .card-link2 i {
+        font-size: 15px;
+    }
+    .sec5-heading p{
+        font-size: 25px;
+    }
+    .sec5-heading h2 {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .sec5-con h3 {
+        font-size: 20px;
+    }
+    .sec5-con p {
+        font-size: 15px;
+    }
+    .sec6-con h2 {
+        font-size: 22px;
+    }
+    .sec6-con p {
+        font-size: 12px;
+    }
+    .app-img {
+        width: 110px;
+    }
+    .play-img{
+        width: 110px;
+        margin-left: 15px;
+    }
+    .contact-logo{
+        width: 260px;
+        height: 40px;
+    }
+    .contact-con h3{
+        font-size: 22px;
+        padding-top: 30px;
+    }
+    .contact-con p {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .contact-menu li a {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .contact-icon a {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    .copyright-sec ul li{
+        font-size: 14px;
+    }
+    input {
+        font-size: 12px;
+        padding: 12px 10px 12px 10px;
+    }
+    button.btn {
+        font-size: 12px;
+        padding: 12px 30px 12px 30px;
+    }
+    .section-7 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 }
