@@ -3,10 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--body-bg-color);
+}
+:root{
+    --body-bg-color:#fff;
+    --h1-color:#231F1B;
+    --p-color:#000;
+    --h2-color:#60311B;
+    --nav-toggle-bg:#fff;
+    --nav-toggle-br:rgba(0,0,0,.1);
+}
+[data-theme="dark"]{
+    --body-bg-color:#000;
+    --h1-color:#fff;
+    --p-color:#fff;
+    --h2-color:#d95e25;
+    --nav-toggle-bg:#ccc;
+    --nav-toggle-br:#ccc;
+}
+.nav-light{
+    display: block;
+}
+[data-theme="dark"]
+.nav-light{
+    display: none;
+}
+.nav-dark{
+    display: none;
+}
+[data-theme="dark"] 
+.nav-dark{
+    display: block;
+    width: 230px;
+    height: 40px;
+}
+.bg-light {
+    background-color: #f8f9fa;
+}
+[data-theme="dark"]
+.bg-light {
+    background-color: #000;
+} 
+[data-theme="dark"]
+.navbar-light .navbar-nav .nav-link{
+    color: #ccc;
+}
+[data-theme="dark"]
+.nav-icon i{
+    color: #ccc;
+}
 .navbar{
     margin-top: 36px;
     margin-left: 139px;
     margin-right: 139px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-color: var(--nav-toggle-bg);
+    border-color:var(--nav-toggle-br) ;
 }
 .nav-link{
     font-family: Be Vietnam;
@@ -50,6 +104,66 @@
     background-color: #E7D3C6;
     color: #60311B;
 }
+
+/* dark and light mode */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+  }
+  .toggle-theme{
+    margin-left: 20px;
+  }
+  .theme-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 35px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  [data-theme="dark"]
+  .bi-moon-fill{
+    font-size: 20px;
+    color:#000;
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 8px;
+}
+.bi-moon-fill{
+    display: none;
+}
+
+.bi-brightness-high{
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+[data-theme="dark"]
+.bi-brightness-high{
+    display: none;
+}
 /* label {
     display:block;
     font-family: Be Vietnam;
@@ -67,28 +181,21 @@ select{
     color: #60311B;
 } */
 .nav-icon a{
-    margin-left: 42px;  
-    /* background-color: #E8D3C6; */
+    margin-left: 30px;  
     color: #60311B;
-    /* width: 52px;
-    height: 52px; */
     font-size: 20px;
     text-decoration: none;
-    /* border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 .home-condent h1{
     font-family: Be Vietnam pro;
-    color: #231F1B;
+    color: var(--h1-color);
     font-size: 56px;
     padding-top:178px ;
     padding-left: 100px;
 }
 .home-condent p{
     font-family: Be Vietnam pro;
-    color: #000;
+    color: var(--p-color);
     font-size: 28px;
     padding-top:20px ;
     padding-left: 100px;
@@ -164,12 +271,12 @@ select{
 .sec-content h2{
     font-family:Be Vietnam Pro, SemiBold ;
     font-size: 46px;
-    color: #291d11;
+    color: var(--h2-color);
 }
 .sec-content p{
     font-family:Be Vietnam Pro ;
     font-size: 28px;
-    color: #494E68;
+    color: var(--p-color);
 }
 .sec2-btn{
     display: flex;
@@ -224,11 +331,12 @@ select{
 .sec3-heading h2{
     text-align: center;
     font: normal normal 600 46px/58px Be Vietnam Pro;
-    color: #60311B;
+    color: var(--h2-color);
 }
 .sec3-heading p{
     text-align: center;
     font: normal normal 300 28px/42px Be Vietnam Pro;
+    color: var(--p-color);
 }
 .sec3-icon{
     display: flex;
@@ -441,12 +549,12 @@ padding-bottom: 28px;
     padding-top: 185px;
     font-family:Be Vietnam Pro ;
     font-size: 46px;
-    color: #60311B;
+    color: var(--h2-color);
 }
 .sec6-con p{
     font-family:Be Vietnam Pro ;
     font-size: 24px;
-    color: #000;
+    color: var(--p-color);
 }
 .sec6-con{
     padding-right: 100px;
@@ -727,6 +835,10 @@ button.btn{
 
 /* media screen-1024 */
 @media screen and (max-width:1024px) {
+    .navbar {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .nav-link{
         font-size: 15px;
         padding: 0px 20px;
@@ -749,6 +861,9 @@ button.btn{
 
 /* media screen-991 */
 @media screen and (max-width:991px) {
+    .nav-icon{
+        padding:15px 0px ;
+    }
     .home-condent h1 {
         font-size: 40px;
     }

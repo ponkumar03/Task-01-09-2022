@@ -14,9 +14,11 @@
 </head>
 <body>
     <section class="home-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="img-fluid" src="images/home-brand.svg" alt="home-logo"></a>
+              <a class="navbar-brand" href="#">
+                <img class="nav-light img-fluid" src="images/home-brand.svg" alt="home-logo">
+                <img class="nav-dark img-fluid" src="images/contact-img.svg" alt="home-logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -66,10 +68,19 @@
                     </div>
                 </form> -->
                 <div class="nav-icon">
-                    <a href="#"><img src="images/farmsent-icon1.png" alt="icon"></a>
-                    <a href="#"><img src="images/farmsent-icon2.png" alt="icon"></a>
-                    <a href="#"><img src="images/farmsent-icon3.png" alt="icon"></a>
+                    <a href="#"><i class="bi bi-translate"></i></a>
+                    <a href="#"><i class="bi bi-geo-alt"></i></a>
+                    <a href="#"><i class="bi bi-cart3"></i></a>
                 </div>
+                <div class="toggle-theme">
+                  <label class="theme-switch" for="toggle-theme">
+                  <input type="checkbox" id="toggle-theme">
+                  <span class="slider round">
+                    <i class="bi bi-brightness-high"></i>
+                    <i class="bi bi-moon-fill"></i>
+                  </span>
+                </label>
+              </div>
               </div>
             </div>
           </nav>
@@ -587,5 +598,25 @@
         </div>
       </div>
     </section>
+    <!-- dark and light theme .js -->
+    <script>
+      const toggle = document.getElementById("toggle-theme");
+      toggle.addEventListener("change",() =>{
+        if(toggle.checked){
+          switchTheme(1);
+        }
+        else{
+          switchTheme(2);
+        }
+      });
+      function switchTheme(mode){
+        if(mode == 1){
+          document.documentElement.setAttribute('data-theme','dark');
+        }
+        else{
+          document.documentElement.setAttribute('data-theme','light');
+        }
+      }
+    </script>
 </body>
 </html>
