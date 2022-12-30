@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmsent-p3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img class="nav-light img-fluid" src="images/home-brand.svg" alt="home-logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="login-btn">
+                  <a class="nav-login" href="#">Login/Signup</a>
+                </div>
+                <div class="nav-icon">
+                  <a href="#"><img src="images/nav-icon1.svg" alt="nav-icon"></a>
+                  <a href="#"><img src="images/nav-icon2.svg" alt="nav-icon"></a>
+                  <a href="#"><img src="images/nav-icon3.svg" alt="nav-icon"></a>
+               </div>
+              </div> 
+            </div>
+          </nav>
+          <div class="container">
+            <div class="main-condent">
+                <div class="start-row1 row">
+                    <div class="rice-icon col-lg-6 col-md-6 col-sm-6">
+                        <h2><img src="images/rice-icon.png" style="width: 33px;height: 41px;" alt="rice">Rice</h2>
+                    </div>
+                    <div class="rice-condent col-lg-6 col-md-6 col-sm-6">
+                        <a href="#">Shop</a><span class="rice"> > Rice</span>
+                    </div>
+                </div>
+                <div class="start-row2 row">
+                    <div class="col-lg-3">
+                        <div class="common-saidbar">
+                            <div id="sidebar-wrapper">
+                              <form>
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes()">
+                                    <select>
+                                      <option  class="option-text">Categories</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                  </div>
+                                  <div id="checkboxes">
+                                    <label for="one">
+                                      <input type="checkbox" id="one" />Basmati Rice<span class="checkspan">15</span></label>
+                                    <label for="two">
+                                      <input type="checkbox" id="two" />White Rice<span class="checkspan">12</span></label>
+                                    <label for="three">
+                                      <input type="checkbox" id="three" />Indian Rice<span class="checkspan">20</span></label>
+                                    <label for="four">
+                                      <input type="checkbox" id="four" />Organic Rice<span class="checkspan">05</span></label>
+                                    <label for="five">
+                                      <input type="checkbox" id="five" />Sella Rice<span class="checkspan">30</span></label>
+                                    <label for="sex">
+                                      <input type="checkbox" id="sex" />Ponni Rice<span class="checkspan">18</span></label>
+                                    <label for="seven">
+                                      <input type="checkbox" id="seven" />Raw Rice<span class="checkspan">10</span></label>
+                                    <label for="eight">
+                                      <input type="checkbox" id="eight" />Parboiled Rice<span class="checkspan">05</span></label>
+                                  </div>
+                                </div>
+                              </form>
+                                <a class="View-link" href="#">View More</a>
+                            </div>
+                            <div id="sidebar-wrapper">
+                              <form>
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes1()">
+                                    <select>
+                                      <option  class="option-text">Product Feature</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                  </div>
+                                  <div id="checkboxes1">
+                                    <label for="first">
+                                      <input type="checkbox" id="first" />Basmati Rice<span class="checkspan">15</span></label>
+                                    <label for="sec">
+                                      <input type="checkbox" id="sec" />White Rice<span class="checkspan">12</span></label>
+                                  </div>
+                                </div>
+                              </form>    
+                            </div>
+                            <div class="saidbar-form">
+                                <h3>Min. order</h3>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Max" aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="saidbar-form">
+                                <h3>Price</h3>
+                                <div class="row">
+                                  <div class="col input-group">
+                                    <input type="text" class="form-control" placeholder="Max" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="col input-group">
+                                    <input type="text" class="form-control" placeholder="Min" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="saidbar1-form">
+                              <form>
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes2()">
+                                    <select>
+                                      <option  class="option-text">Country</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                  </div>
+                                  <div id="checkboxes2">
+                                    <div class="saidbar-search">
+                                      <div class="input-group">
+                                          <span class="input-group-search" id="basic-addon1"><i class="bi bi-search"></i></span>
+                                          <input type="text" class="form-controls" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
+                                  </div>
+                                    <label for="one1">
+                                      <input type="checkbox" id="one1" /><img src="images/astria-fl.svg" alt="flag"style="padding-right: 10px;">Austria<span class="checkspan">15</span></label>
+                                    <label for="two2">
+                                      <input type="checkbox" id="two2" /><img src="images/brazil-fl.svg" alt="flag"style="padding-right: 10px;">Brazil<span class="checkspan">12</span></label>
+                                    <label for="three3">
+                                      <input type="checkbox" id="three3" /><img src="images/canda-fl.svg" alt="flag"style="padding-right: 10px;">Canada<span class="checkspan">20</span></label>
+                                    <label for="four4">
+                                      <input type="checkbox" id="four4" /><img src="images/germany-fl.svg" alt="flag"style="padding-right: 10px;">Germany<span class="checkspan">05</span></label>
+                                    <label for="five5">
+                                      <input type="checkbox" id="five5" /><img src="images/france-fl.svg" alt="flag"style="padding-right: 10px;">France<span class="checkspan">30</span></label>
+                                    <label for="sex6">
+                                      <input type="checkbox" id="sex6" /><img src="images/india-fl.svg" alt="flag"style="padding-right: 10px;">India<span class="checkspan">18</span></label>
+                                    <label for="seven7">
+                                      <input type="checkbox" id="seven7" /><img src="images/phlifines-fl.svg" alt="flag"style="padding-right: 10px;">Philippines<span class="checkspan">10</span></label>
+                                    <label for="eight8">
+                                      <input type="checkbox" id="eight8" /><img src="images/pakistan-fl.svg" alt="flag"style="padding-right: 10px;">Pakistan<span class="checkspan">05</span></label>
+                                  </div>
+                                </div>
+                              </form>
+                                <a class="View-link" href="#">View More</a>
+                            </div>
+                            <div id="sidebar-wrapper">
+                              <form>
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes3()">
+                                    <select>
+                                      <option  class="option-text">Certification</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                  </div>
+                                  <div id="checkboxes3">
+                                    <label for="check1">
+                                      <input type="checkbox" id="check1" />HACCP<span class="checkspan">15</span></label>
+                                    <label for="check2">
+                                      <input type="checkbox" id="check2" />SGS<span class="checkspan">12</span></label>
+                                    <label for="check3">
+                                      <input type="checkbox" id="check3" />ISO<span class="checkspan">20</span></label>
+                                    <label for="check4">
+                                      <input type="checkbox" id="check4" />HALAL<span class="checkspan">05</span></label>
+                                    <label for="check5">
+                                      <input type="checkbox" id="check5" />GMP<span class="checkspan">30</span></label>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="input-fields">
+                            <div class="row search-bar-form">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="saidbar-search">
+                                        <div class="input-group">
+                                            <span class="input-group-search" id="basic-addon1"><i class="bi bi-search"></i></span>
+                                            <input type="text" class="form-controls" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="input-group">
+                                        <select class="form-select1" id="inputGroupSelect01">
+                                          <option selected>Sort by Latest</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="input-group">
+                                        <select class="form-select2" id="inputGroupSelect02">
+                                          <option selected>Show 20</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="Categories row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" style="margin-bottom: 30px; row-gap: 30px;">
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img1.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Premium Rice flour</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>John doe</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>80</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>15 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$300/Ton <span class="c-img"><img class="cry-img" src="images/jpan-fl.svg" alt="flag">JP</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img2.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Toor dal / Pigeon peas</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Jai Doe</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>200</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>100 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$35/Ton <span class="c-img"><img class="cry-img" src="images/india-fl.svg" alt="flag">IN</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img3.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Green coffee beans</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>150</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$100/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img4.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Cardamom</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>180</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$135/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                    <div class="card">
+                                      <img src="images/rice-img5.png" class="card-img-top" alt="masala">
+                                      <div class="card-body">
+                                        <h5>Assorted dried trop...</h5>
+                                          <div class="sec3-icon">
+                                              <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                              <h6>Aditya</h6>
+                                              <i class="bi bi-shield-fill-check"></i>
+                                          </div>
+                                          <div class="row com-progress">
+                                            <div class="col-3 pro-s">
+                                              <span>80</span>
+                                            </div>
+                                            <div class="progress col-7">
+                                              <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="col-2 pro-s">
+                                              <span>0</span>
+                                            </div>
+                                           </div>
+                                          <p>Quality Left:<b>15 Tons</b></p>
+                                        <div class="doller">
+                                          <h5>$300/Ton <span class="c-img"><img class="cry-img" src="images/idndonasia-fl.svg" alt="flag">JP</span></h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col card-col">
+                                    <div class="card">
+                                      <img src="images/rice-img6.png" class="card-img-top" alt="masala">
+                                      <div class="card-body">
+                                        <h5>Dried pressed fig</h5>
+                                          <div class="sec3-icon">
+                                              <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                              <h6>Mahmood</h6>
+                                              <i class="bi bi-shield-fill-check"></i>
+                                          </div>
+                                          <div class="row com-progress">
+                                            <div class="col-3 pro-s">
+                                              <span>200</span>
+                                            </div>
+                                            <div class="progress col-7">
+                                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="col-2 pro-s">
+                                              <span>0</span>
+                                            </div>
+                                           </div>
+                                          <p>Quality Left:<b>100 Tons</b></p>
+                                        <div class="doller">
+                                          <h5>$35/Ton <span class="c-img"><img class="cry-img" src="images/syria-fl.svg" alt="flag">IN</span></h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col card-col">
+                                    <div class="card">
+                                      <img src="images/rice-img7.png" class="card-img-top" alt="masala">
+                                      <div class="card-body">
+                                        <h5>Black beans</h5>
+                                          <div class="sec3-icon">
+                                              <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                              <h6>Hector</h6>
+                                              <i class="bi bi-shield-fill-check"></i>
+                                          </div>
+                                          <div class="row com-progress">
+                                            <div class="col-3 pro-s">
+                                              <span>150</span>
+                                            </div>
+                                            <div class="progress col-7">
+                                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="col-2 pro-s">
+                                              <span>0</span>
+                                            </div>
+                                           </div>
+                                          <p>Quality Left:<b>25 Tons</b></p>
+                                        <div class="doller">
+                                          <h5>$100/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col card-col">
+                                    <div class="card">
+                                      <img src="images/rice-img8.png" class="card-img-top" alt="masala">
+                                      <div class="card-body">
+                                        <h5>Wheat</h5>
+                                          <div class="sec3-icon">
+                                              <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                              <h6>Hector</h6>
+                                              <i class="bi bi-shield-fill-check"></i>
+                                          </div>
+                                          <div class="row com-progress">
+                                            <div class="col-3 pro-s">
+                                              <span>180</span>
+                                            </div>
+                                            <div class="progress col-7">
+                                              <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="col-2 pro-s">
+                                              <span>0</span>
+                                            </div>
+                                           </div>
+                                          <p>Quality Left:<b>25 Tons</b></p>
+                                        <div class="doller">
+                                          <h5>$135/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img9.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Premium Rice flour</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>John doe</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>80</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>15 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$300/Ton <span class="c-img"><img class="cry-img" src="images/jpan-fl.svg" alt="flag">JP</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img10.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Toor dal / Pigeon peas</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Jai Doe</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>200</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>100 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$35/Ton <span class="c-img"><img class="cry-img" src="images/india-fl.svg" alt="flag">IN</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img11.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Green coffee beans</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>150</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$100/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img12.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Cardamom</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>180</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$135/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img13.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Assorted dried trop...</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Aditya</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>80</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>15 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$300/Ton <span class="c-img"><img class="cry-img" src="images/idndonasia-fl.svg" alt="flag">JP</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img14.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Dried pressed fig</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Mahmood</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>200</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>100 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$35/Ton <span class="c-img"><img class="cry-img" src="images/syria-fl.svg" alt="flag">IN</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img15.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Black beans</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>150</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$100/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col card-col">
+                                  <div class="card">
+                                    <img src="images/rice-img16.png" class="card-img-top" alt="masala">
+                                    <div class="card-body">
+                                      <h5>Wheat</h5>
+                                        <div class="sec3-icon">
+                                            <img class="icon-logo" src="images/icon-img.jpg" alt="icon">
+                                            <h6>Hector</h6>
+                                            <i class="bi bi-shield-fill-check"></i>
+                                        </div>
+                                        <div class="row com-progress">
+                                          <div class="col-3 pro-s">
+                                            <span>180</span>
+                                          </div>
+                                          <div class="progress col-7">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                          <div class="col-2 pro-s">
+                                            <span>0</span>
+                                          </div>
+                                         </div>
+                                        <p>Quality Left:<b>25 Tons</b></p>
+                                      <div class="doller">
+                                        <h5>$135/Ton <span class="c-img"><img class="cry-img" src="images/colombia-fl.svg" alt="flag">CL</span></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+<!-- saidbar-selectoption.js -->
+<!-- /* select with checkbox Categories */.js -->
+
+    <script>
+      var expanded = false;
+    
+    function showCheckboxes() {
+      var checkboxes = document.getElementById("checkboxes");
+      if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+      } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+      }
+    }
+    </script>
+
+  <!-- /* select with checkbox Product Feature */ -->
+
+<script>
+  var expanded = false;
+
+function showCheckboxes1() {
+  var checkboxes = document.getElementById("checkboxes1");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+</script>
+  <!-- /* select with checkbox Country */ -->
+
+  <script>
+    var expanded = false;
+  
+  function showCheckboxes2() {
+    var checkboxes = document.getElementById("checkboxes2");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }
+  </script>
+   <!-- /* select with checkbox Certification */ -->
+
+   <script>
+    var expanded = false;
+  
+  function showCheckboxes3() {
+    var checkboxes = document.getElementById("checkboxes3");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }
+  </script>
+</body>
+</html>
