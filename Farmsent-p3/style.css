@@ -71,7 +71,7 @@
     align-items: center;
 }
 .rice-icon h2 img{
-    margin-right: 42px;
+    margin-right: 26px;
     margin-bottom: 10px;
 }
 .rice-icon h2{
@@ -115,7 +115,7 @@ span.rice{
 .multiselect {
     width: auto;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding-top: 20px;
 }
   .selectBox {
     position: relative; 
@@ -142,6 +142,9 @@ span.rice{
     color: blue;
   }
   .checkspan{
+    font-family: Be Vietnam Pro, Regular;
+    font-size: 16px;
+    color: #969696;
     float: right;
   }
   #checkboxes {
@@ -162,6 +165,7 @@ span.rice{
     line-height: 46px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 18px;
+    color: #000000;
   }
   /* select with checkbox Product Feature */
   #checkboxes1 {
@@ -182,6 +186,7 @@ span.rice{
     line-height: 46px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 18px;
+    color: #000000;
   }
 
   /* select with checkbox Country */
@@ -203,6 +208,7 @@ span.rice{
     line-height: 46px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 18px;
+    color: #000000;
   }
   .saidbar1-form{
     padding-bottom: 40px;
@@ -227,6 +233,7 @@ span.rice{
     line-height: 46px;
     font-family: Be Vietnam Pro, Regular;
     font-size: 18px;
+    color: #000000;
   }
 
 .saidbar-heading{
@@ -249,14 +256,14 @@ span.rice{
     text-decoration: none;
     color: #645D4A;
     line-height: 40px;
-    padding: 20px;
+    padding: 20px 0px;
 }
 /* saidbar-form */
 .saidbar-form{
     font-family: Be Vietnam Pro, SemiBold;
     font-size: 22px;
     color: #60311B;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #ced4da;
 }
 .input-group-text {
@@ -278,8 +285,24 @@ span.rice{
     padding: 12px 15px;
     border-radius: 10px;
 }
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
 .saidbar-form h3{
     padding: 25px 0px;
+}
+.saidbar-form p{
+    text-align: center;
+    padding-top: 16px;
+    margin-bottom: 0px;
+}
+.saidbar-form a{
+    text-decoration: none;
+    color: #60311B;
 }
 .input-group-search {
     display: flex;
@@ -310,7 +333,8 @@ span.rice{
     border: 1px solid #ced4da;
     border-left: none !important;
     appearance: none;
-    border-radius: 0.25rem;    color: #A5A5A5;
+    border-radius: 0.25rem;    
+    color: #A5A5A5;
     padding: 12px 15px;
     border-radius: 10px;
 }
@@ -320,8 +344,18 @@ span.rice{
     width: 1%;
     min-width: 0;
 }
+.form-controls:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+.saidnavbar-search{
+    padding-bottom: 29px;
+}
 .saidbar-search{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .form-select1{
     font-family: Be Vietnam Pro, Regular;
@@ -366,13 +400,17 @@ span.rice{
     font-family: Be Vietnam Pro;
 }
 .card-col{
-    padding-left: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .card{
     border-radius: 15px;
 }
 .card-body {
-    padding: 16px 14px;
+    padding: 20px 12px 12px 13px;
+}
+.card-body h5{
+    font-size: 20px;
 }
 .card-body p{
     padding-top: 12px;
@@ -398,7 +436,8 @@ span.rice{
     float: right;
 }
 .cry-img{
-    padding-right: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 
