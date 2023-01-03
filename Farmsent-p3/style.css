@@ -999,7 +999,7 @@ button.btn{
         margin-bottom: 20px;
     }
     .Categories{
-        padding: 0px 50px;
+        padding: 0px 40px;
     }
     .farm-star {
         padding: 50px;
@@ -1043,5 +1043,48 @@ button.btn{
     }
     .contact-con p {
         font-size: 17px;
+    }
+}
+/* Media screen 320px */
+@media screen and (max-width:320px) {
+    .section-7 {
+        padding: 0px;
+    }
+    .sec6-con {
+        padding: 0px;
+    }
+    .sec6-con h2 {
+        font-size: 22px;
+    }
+    .sec6-con p {
+        font-size: 12px;
+    }
+    .app-img {
+        width: 110px;
+        height: 35px;
+    }
+    .play-img {
+        width: 110px;
+        height: 35px;
+        margin-left: 15px;
+    }
+    .app-buttons {
+        padding-top: 20px;
+    }
+    .copyright-sec ul li {
+        font-size: 14px;
+        padding-left: 18px;
+    }
+    .contact-icon a {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    input {
+        font-size: 12px;
+        padding: 12px 10px 12px 10px;
+    }
+    button.btn {
+        font-size: 12px;
+        padding: 12px 30px 12px 30px;
     }
 }
