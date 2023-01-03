@@ -198,6 +198,9 @@ span.rice{
     #checkboxes2 {
       display: none;  }
   }
+  #checkboxes2 img{
+    margin-bottom: 6px;
+  }
   input[type='checkbox']{
     margin-right: 10px;
     width: 18px;
@@ -296,6 +299,8 @@ span.rice{
     padding: 25px 0px;
 }
 .saidbar-form p{
+    font-family: Be Vietnam Pro, Regular;
+    font-size: 18px;
     text-align: center;
     padding-top: 16px;
     margin-bottom: 0px;
@@ -383,7 +388,7 @@ span.rice{
 .sec3-icon{
     display: flex;
     padding-top: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 .icon-logo{
     width: 25px;
@@ -409,8 +414,11 @@ span.rice{
 .card-body {
     padding: 20px 12px 12px 13px;
 }
-.card-body h5{
+.doller h5{
+    font-family: Be Vietnam Pro, Bold;
     font-size: 20px;
+    line-height: 36px;
+    color: #60311B;
 }
 .card-body p{
     padding-top: 12px;
@@ -419,6 +427,15 @@ span.rice{
 .com-progress p{
     padding: 0px;
     margin: 0px;
+}
+.pro-s{
+    font-family: Be Vietnam Pro, Medium;
+    font-size: 14px;
+}
+b, strong {
+    font-family: Be Vietnam Pro;
+    line-height: 36px;
+    font-size: 14px;
 }
 .progress{
     padding: 0;
@@ -439,7 +456,114 @@ span.rice{
     border-radius: 4px;
     margin-bottom: 5px;
 }
-
+/* mobile-app section */
+.section-6{
+    background-image:url(images/bg-img.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mobile-img{
+    padding-top: 95px;
+}
+.sec6-con h2{
+    padding-top: 185px;
+    font-family:Be Vietnam Pro ;
+    font-size: 46px;
+    color: #60311B;
+}
+.sec6-con p{
+    font-family:Be Vietnam Pro ;
+    font-size: 24px;
+    color: #000000;
+}
+.sec6-con{
+    padding-right: 100px;
+}
+.app-buttons{
+    padding-top: 40px;
+}
+.app-img{
+    border-radius: 17px;
+}
+.play-img{
+    margin-left: 30px;
+    border-radius: 17px;
+}
+/* contact-section */
+.section-7{
+    padding-top: 189px;
+    padding-bottom: 89px;
+    background-color: #000;
+}
+.contact-logo{
+    color: #E7D3C6;
+}
+.contact-con h3{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    color: #FFF;
+    padding-top: 58px;
+}
+.contact-con p{
+    font-family: Be Vietnam Pro;
+    font-size: 26px;
+    color: #FFF;
+    padding-bottom: 62px;
+}
+.contact-menu ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.contact-menu li a{
+    text-decoration: none;
+    font-family:Be Vietnam Pro ;
+    font-size: 24px;
+    line-height: 54px;
+    color: #FFF;
+}
+.contact-icon a{
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.contact-icon a:first-child{
+    padding-left: 0px;
+}
+.form-btn{
+    padding-top: 45px;
+}
+input{
+    font-family:Be Vietnam Pro ;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 18px 170px 18px 30px;
+    color: #979797;
+}
+button.btn{
+    font-family:Be Vietnam Pro ;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 18px 38px 18px 38px;
+    background-color: #AC7046;
+    color: #F9F3EF;
+}
+.copyright-sec ul{
+    font-family:Be Vietnam Pro ;
+    font-size: 22px;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    padding-top: 59px;
+}
+.copyright-sec ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright-sec ul li{
+    padding-left: 50px;
+}
+.copyright-sec ul li:first-child{
+    padding-left: 0px;
+}
 
 /* Media Secreen */
 /* Media Secreen-1600px */
@@ -456,8 +580,64 @@ span.rice{
         margin-right: 50px;
     }
     .nav-link{
-        margin-left: 30px;
+        margin-left: 28px;
     }
+    #checkboxes label {
+        font-size: 18px;
+        line-height: 42px;
+    }
+    #checkboxes1 label {
+        font-size: 18px;
+        line-height: 42px;
+    }
+    #checkboxes2 label {
+        font-size: 18px;
+        line-height: 42px;
+    }
+    #checkboxes3 label {
+        font-size: 18px;
+        line-height: 42px;
+    }
+    .form-controls {
+        font-size: 16px;  
+    }
+    .form-select1 {
+        font-size: 16px;
+    }
+    .form-select2 {
+        font-size: 16px;
+    }
+    .card-body{
+        padding: 10px;
+    }
+    .sec3-icon h6{
+        padding: 0px 16px;
+    }
+    .card-body h5{
+        font-family: Be Vietnam Pro, SemiBold;
+        font-size: 15px;
+    }
+    .card-body p {
+        padding-top: 12px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .pro-s {
+        font-family: Be Vietnam Pro, Medium;
+        font-size: 12px;
+    }
+    .sec6-con {
+        padding-right: 32px;
+    }
+    .sec6-con h2{
+        padding-top: 150px;
+    }
+    input{
+        padding: 18px 120px 18px 20px;
+   }
+   .contact-con p{
+    font-size: 24px;
+   }
 }
 /* Media Secreen-1340px */
 @media screen and (max-width:1340px) {
@@ -512,6 +692,20 @@ span.rice{
     #sidebar-wrapper{
         padding-bottom: 15px;
     }
+    .sec6-con h2 {
+        font-size: 40px;
+        padding-top: 150px;
+    }
+    .sec6-con p {
+        font-size: 20px;
+    }
+    input{
+        padding: 18px 120px 18px 20px;
+    }
+    .section-7 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
 }
 
 /* Media-screen-1199px */
@@ -544,11 +738,31 @@ span.rice{
     .start-row1{
         padding: 50px 0px;
     }
+    .form-controls {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .form-select1 {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .form-select2 {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .saidbar-search {
+        padding-bottom: 30px;
+    }
+    .rice-icon h2 img{
+        margin-right: 20px;
+        width: 30px !important;
+        height: 35px !important;
+    }
     .card-body {
         padding: 12px 10px;
     }
     .card-body h5 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .sec3-icon{
         padding-bottom: 15px;
@@ -558,6 +772,20 @@ span.rice{
     }    
     .card-body p{
         font-size: 12px;
+        margin-bottom: 10px;
+        padding: 5px 0px;
+    }
+    .sec3-icon h6 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .icon-logo {
+        width: 20px;
+        height: 20px;
+    }
+    .doller h5{
+        font-size: 16px;
+        line-height: 20px;
     }
     .saidbar-form h3 {
         font-size: 20px;
@@ -595,6 +823,46 @@ span.rice{
         padding: 18px;
         line-height: 32px;
     }
+    .sec3-content h2{
+        font-size: 38px;
+       }
+       .farm-pics {
+        left: 60px;
+       }
+       .sec6-con h2{
+        font-size: 32px;
+       }
+       .sec6-con p{
+        font-size: 17px;
+       }
+       .play-img{
+        width: 150px;
+        height: 42px;
+       }
+       .app-img{
+        width: 150px;
+        height: 42px;
+       }
+       .contact-icon{
+        padding-top: 10px;
+       }
+       .contact-con p{
+        font-size: 20px;
+       }
+       input {
+        font-size: 18px;
+        padding: 18px 70px 18px 20px;
+    }
+       button.btn{
+        font-size: 18px;
+        padding: 18px 30px 18px 30px;
+       }
+       .contact-menu li a{
+        font-size: 20px;
+       }
+       .copyright-sec ul{
+        font-size: 18px;
+       }
 }
 /* Media Screen 1024px */
 @media screen and (max-width:1024px) {
@@ -646,5 +914,134 @@ span.rice{
     }
     .search-bar-form{
         padding: 20px 0px;
+    }
+    .nav-icon{
+        margin-top: 25px;
+    }
+    .nav-login{
+        padding: 10px 38px;
+    }
+    .mobile-img {
+        padding-top: 50px;
+    }
+    .sec6-con h2 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .sec6-con p {
+        font-size: 20px;
+    }
+    .app-buttons{
+        padding-bottom: 40px;
+    }
+    .contact-con p {
+        font-size: 15px;
+    }
+    .contact-con h3{
+        font-size: 26px;
+    }
+    .card-body h5 {
+        font-size: 16px;
+    }
+    input {
+        font-size: 15px;
+        padding: 18px 25px 18px 20px;
+    }
+    button.btn {
+        font-size: 15px;
+        padding: 18px 20px 18px 20px;
+    }
+    .copyright-sec ul {
+        font-size: 13px;
+    }
+    .contact-menu li a{
+        font-size: 18px;
+        line-height: 50px;
+    }
+}
+/* Media Screen-640px */
+@media screen and (max-width:640px) {
+    .sec2-content h2 {
+        font-size: 35px;
+    }
+    .sec2-content p {
+        font-size: 16px;
+    }
+    .farm-pics {
+        left: 70px;
+    }
+    .sec6-con h2{
+        font-size: 36px;
+    }
+    .contact-con p {
+        font-size: 18px;
+    }
+    .form-btn {
+        padding-top: 0px;
+    }
+}
+/* Media Screen-480px */
+@media screen and (max-width:480px) {
+    .rice-icon h2 {
+        font-size: 30px;
+    }
+    .rice-icon h2 img {
+        width: 25px !important;
+        height: 30px !important;
+    }
+    .rice-condent a {
+        font-size: 20px;
+    }
+    span.rice {
+        font-size: 20px;
+    }
+    .form-select1{
+        margin-bottom: 20px;
+    }
+    .Categories{
+        padding: 0px 50px;
+    }
+    .farm-star {
+        padding: 50px;
+    }
+    .farm-pics {
+        left: 120px;
+    }
+    .sec3-content h2{
+        text-align: center;
+    }
+    .sec3-content p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .pro-s span {
+        font-size: 15px;
+    }
+    .sec6-con {
+        padding: 0px 30px;
+    }
+    .mobile-img {
+        padding-top: 0px;
+    }
+    .sec6-con h2 {
+        font-size: 31px;
+    }
+    .sec6-con p {
+        font-size: 16px;
+    }
+    .contact-con p{
+        padding-bottom: 30px;
+    }
+    input {
+        padding: 15px 25px 15px 20px;
+    }
+    button.btn {
+        padding: 15px 20px 15px 20px;
+    }
+    .section-7 {
+        padding: 30px;
+    }
+    .contact-con p {
+        font-size: 17px;
     }
 }
