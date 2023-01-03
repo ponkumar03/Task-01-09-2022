@@ -665,8 +665,61 @@ button.btn{
     .nav-link{
         margin-left: 30px;
     }
+    .card-body{
+        padding: 12px;
+    }
+    .card-body h5{
+        font-family: Be Vietnam Pro, SemiBold;
+        font-size: 16px;
+        line-height: 44px;
+        color: #231F1B;
+        margin-bottom: 0px;
+    }
+    .sec3-icon{
+        padding-top: 0px;
+    }
+    .sec-content h2{
+        font-size: 40px;
+    }
+    .sec-content p{
+        font-size: 20px;
+    }
+    .card-body1 h3{
+        font-size: 33px;
+    }
+    .card-body2 h3{
+        font-size: 33px;
+    }
+    .card-link1 p {
+        padding: 24px 180px 24px 180px;
+    }
+    .card-link2 p {
+        padding: 24px 180px 24px 180px;
+    }
+    .common-card {
+        padding-bottom: 150px;
+    }
+    .sec5-con h3{
+        font-size: 32px;
+    }
+    .sec5-con p{
+        font-size: 22px;
+    }
+    .sec6-con h2{
+        font-size: 40px;
+        padding-top: 160px;
+    }
+    .sec6-con p{
+        font-size: 21px;
+    }
+    .contact-con p{
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+    input{
+        padding: 18px 120px 18px 20px;
+   }
 }
-
 /* media screen-1340px */
 @media screen and (max-width:1340px) {
     .home-condent h1{
@@ -956,6 +1009,21 @@ button.btn{
         font-size: 18px;
     }
 }
+/* media-screen-768 */
+@media screen and (max-width:768px) {
+    .button3 .fa-arrow-right {
+        width: 20px;
+        height: 20px;
+    }
+    .sec2-btn .button3 {
+        font-size: 18px;
+        padding: 8px 50px 8px 30px;
+    }
+    .sec3-btn .button3 {
+        font-size: 18px;
+        padding: 8px 50px 8px 30px;
+    }
+}
 /* media-screen-640 */
 @media screen and (max-width:640px) {
     .home-condent h1 {
@@ -967,14 +1035,6 @@ button.btn{
     }
     .sec-content p {
         font-size: 14px;
-    }
-    .button3 .fa-arrow-right {
-        width: 20px;
-        height: 20px;
-    }
-    .sec2-btn .button3 {
-        font-size: 18px;
-        padding: 8px 50px 8px 30px;
     }
     .sec2-content {
         width: 200px;
@@ -1032,15 +1092,39 @@ button.btn{
     }
     .sec-content h2 {
         font-size: 22px;
+        text-align: center;
     }
     .sec-content p {
         font-size: 15px;
         margin-bottom: 10px;
+        text-align: center;
     }
     .sec2-btn {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .button3 .fa-arrow-right {
+        width: 14px;
+        height: 14px;
+    }
+    .sec2-btn .button3 {
+        line-height: 26px;
+    }
+    .sec3-btn .button3 {
+        line-height: 26px;
+    }
+    .section-3{
+        padding: 0px 30px;
+    }
+    .card1 {
+        padding: 0px 30px;
+    }
+    .sec5-heading h2{
+        font-size: 20px;
+    }
+    .section-5{
+        padding: 0px 30px;
     }
     .sec3-heading p {
         font-size: 20px;
