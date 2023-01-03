@@ -223,6 +223,11 @@
     font-size: 16px;
     font-family: Be Vietnam Pro;
 }
+.doller h5{
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    color: #60311B;
+}
 .card{
     border-radius: 15px;
 }
@@ -328,12 +333,12 @@ padding-bottom: 28px;
     padding-top: 185px;
     font-family:Be Vietnam Pro ;
     font-size: 46px;
-    color: var(--h2-color);
+    color: #60311B;
 }
 .sec6-con p{
     font-family:Be Vietnam Pro ;
     font-size: 24px;
-    color: var(--p-color);
+    color: #000000;
 }
 .sec6-con{
     padding-right: 100px;
@@ -439,8 +444,61 @@ button.btn{
         margin-right: 50px;
     }
     .nav-link{
-        margin-left: 30px;
+        margin-left: 25px;
     }
+    .sidebar-nav li a {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .home-main-condent h1{
+        padding: 150px 300px 150px 70px;
+        line-height: 60px;
+    }
+    .form-select1{
+        margin-left: 50px;
+    }
+    .form-select2{
+        margin-left: 20px;
+    }
+    .card-body{
+        padding: 10px;
+    }
+    .sec3-icon h6{
+        padding: 0px 16px;
+    }
+    .card-body h5{
+        font-family: Be Vietnam Pro, SemiBold;
+        font-size: 16px;
+    }
+    .card-body p {
+        padding-top: 12px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .pro-s {
+        font-family: Be Vietnam Pro, Medium;
+        font-size: 12px;
+    }
+    .farm-pics {
+    position: absolute;
+    top: -60px;
+    left: 80px;
+}
+.sec6-con{
+    padding-right: 50px;
+}
+.farm-star{
+    padding-bottom: 80px;
+}
+.sec6-con h2{
+    padding-top: 150px;
+}
+input{
+        padding: 18px 120px 18px 20px;
+}
+.contact-con p{
+    font-size: 24px;
+}
 }
 /* Media screen-1340px */
 @media screen and (max-width:1340px) {
@@ -588,9 +646,20 @@ button.btn{
     .nav-link{
         margin-left: 0px;
     }
+    .home-main-condent h1 {
+        padding: 110px 170px 110px 60px;    
+    }
+    .sidebar-nav li a{
+        font-size: 18px;
+        line-height: 45px;
+    }
+
 }
 /* Media screen-991px */
 @media screen and (max-width:991px) {
+     .main-con{
+        flex-direction: column-reverse;
+    }
     .nav-icon{
         margin-top: 20px;
     }
@@ -601,7 +670,9 @@ button.btn{
         margin-left: 50px;
     }
     .home-main-condent h1 {
-        padding: 120px 200px 130px 60px;
+        font-size: 48px;
+        line-height: 55px;
+        padding: 100px 150px 100px 60px;
     }
     .home-condent {
         padding-top: 50px;
@@ -651,7 +722,7 @@ button.btn{
         padding-top: 50px;
     }
     .sec6-con h2 {
-        font-size: 40px;
+        font-size: 43px;
         padding-top: 100px;
     }
     .sec6-con p {
@@ -682,18 +753,31 @@ button.btn{
         line-height: 50px;
     }
 }
+/* Media Screen-768px */
+@media screen and (max-width:768px) {
+    .home-main-condent h1 {
+        padding: 90px 175px 90px 60px;
+    }
+    .home-main-condent h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
 /* Media Screen-640px */
 @media screen and (max-width:640px) {
     .home-main-condent h1 {
         font-size: 35px;
         line-height: 50px;
-        padding: 120px 100px 130px 60px;
+        padding: 70px 100px 70px 60px;
     }
     .sec2-content h2 {
         font-size: 35px;
     }
     .sec2-content p {
         font-size: 16px;
+    }
+    .contact-con p {
+        font-size: 18px;
     }
     .farm-pics {
         left: 70px;
@@ -710,7 +794,6 @@ button.btn{
     .home-main-condent h1 {
         font-size: 33px;
         line-height: 40px;
-        padding: 100px 60px 100px 60px;
     }
     .sidebar-brand{
         font-size: 20px;
@@ -751,6 +834,12 @@ button.btn{
         font-size: 18px;
         padding: 4px 15px 4px 15px;
     }
+    .pro-s span {
+        font-size: 15px;
+    }
+    .sec6-con {
+        padding: 0px 50px;
+    }
     .mobile-img {
         padding-top: 0px;
     }
@@ -769,9 +858,6 @@ button.btn{
     button.btn {
         padding: 15px 20px 15px 20px;
     }
-    .section-7 {
-        padding-top: 60px;
-    }
     .contact-con p {
         font-size: 17px;
     }
@@ -779,7 +865,8 @@ button.btn{
 /* Media Screen-425px */
 @media screen and (max-width:425px) {
     .home-main-condent h1 {
-        padding: 100px 50px 100px 50px;
+        font-size: 30px;
+        padding: 40px 55px 40px 40px;
     }
     .section-2 {
         padding-bottom: 50px;
@@ -830,9 +917,9 @@ button.btn{
         width: 200px;
     }
     .home-main-condent h1 {
-        font-size: 28px;
-        line-height: 40px;
-        padding: 50px 20px 50px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 50px 33px 60px 60px;
     }
     .sec2-content h2 {
         font-size: 25px;
@@ -854,7 +941,7 @@ button.btn{
         padding-top: 50px;
     }
     .sec6-con {
-        padding-right: 0px;
+        padding: 0px ;
     }
     .contact-logo {
         color: #E7D3C6;
