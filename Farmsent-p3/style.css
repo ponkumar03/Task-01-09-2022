@@ -572,6 +572,9 @@ button.btn{
         margin-left: 100px;
         margin-right: 100px;
     }
+    .nav-link{
+        margin-left: 26px;
+    }
 }
 /* Media Secreen-1440px */
 @media screen and (max-width:1440px) {
@@ -642,8 +645,22 @@ button.btn{
 /* Media Secreen-1340px */
 @media screen and (max-width:1340px) {
     .navbar {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+    .nav-link {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0px 20px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        padding: 0px 20px;
+    }
+    .nav-login{
+        font-size: 16px;
+        padding: 15px 30px;
     }
     .rice-icon h2{
         font-size: 40px;
@@ -661,7 +678,12 @@ button.btn{
         line-height: 20px;
     }
     .card-body h5{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .card-body p {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
     }
     .pro-s{
         padding-right: 0px;
@@ -715,13 +737,21 @@ button.btn{
     } */
     .nav-link{
         font-size: 16px;
-        padding: 0px 20px;
-        margin-left: 18px;
+        margin-left: 5px;
     }
-    .nav-login{
+    .nav-login {
         font-size: 16px;
-        padding: 15px 30px;
+        padding: 12px 20px;
     }
+    .nav-icon a {
+        margin-left: 15px;
+    }
+    .nav-icon a {
+    margin-left: 20px;
+    }
+    .nav-icon a {
+    margin-left: 20px;
+   }
     .rice-icon h2 {
         font-size: 35px;
     }
