@@ -631,6 +631,16 @@ button.btn{
 
 
 /* Media Screen */
+/* media screen- 1600px */
+@media screen and (max-width:1600px) {
+    .navbar {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .nav-link{
+        margin-left: 30px;
+    }
+}
 /* media screen- 1440px */
 @media screen and (max-width:1440px) {
     .navbar{
@@ -647,7 +657,7 @@ button.btn{
         padding-left: 0px;
     }
     .nav-link{
-        margin-left: 30px;
+        margin-left: 28px;
     }
     .card-body{
         padding: 12px;
@@ -706,8 +716,22 @@ button.btn{
 }
 /* media screen-1340px */
 @media screen and (max-width:1340px) {
+    .navbar{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .home-condent h1{
         padding-top: 130px;
+    }
+    .nav-link {
+        font-size: 16px;
+        margin-left: 18px;
+    }
+    .nav-icon a{
+        margin-left: 20px;
+    }
+    .nav-login{
+        font-size: 16px;
     }
     .logo-sec{
         padding-bottom: 100px;
@@ -779,6 +803,17 @@ button.btn{
 
 /* media-screen-1199px */
 @media screen and (max-width:1199px) {
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 16px;
+        padding: 0px 14px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+        padding: 0px 20px;
+    }
+    .nav-login{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
     .nav-link{
         margin-left: 0px;
     }
@@ -873,8 +908,8 @@ button.btn{
 /* media screen-1024 */
 @media screen and (max-width:1024px) {
     .navbar {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .nav-link{
         font-size: 15px;
@@ -892,7 +927,7 @@ button.btn{
         padding: 0px 20px;
     }
     .nav-icon a{
-        margin-left: 25px;
+        margin-left: 18px;
     }
 }
 
@@ -902,10 +937,10 @@ button.btn{
         padding:15px 0px ;
     }
     .home-condent h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     .home-condent p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .home-btn .button1{
         font-size: 15px;
@@ -1011,11 +1046,11 @@ button.btn{
 /* media-screen-640 */
 @media screen and (max-width:640px) {
     .home-condent h1 {
-        font-size: 35px;
-        padding-top: 100px;
+        font-size: 32px;
+        padding-top: 80px;
     }
     .home-condent p {
-        font-size: 18px;
+        font-size: 17px;
     }
     .sec-content p {
         font-size: 14px;
@@ -1152,7 +1187,25 @@ button.btn{
         margin-right: 10px;
     }
     .home-condent h1 {
-        font-size: 25px;
+        font-size: 24px;
+    }
+    .home-btn .button1 {
+        font-size: 12px;
+        padding: 10px 50px 10px 20px;
+    }
+    .home-btn .button2 {
+        font-size: 12px;
+        padding: 10px 50px 10px 20px;
+    }
+    .button1 .fa-arrow-right{
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .button2 .fa-arrow-right{
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
     }
     .sec3-heading p {
         font-size: 18px;
