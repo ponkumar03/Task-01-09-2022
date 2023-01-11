@@ -175,8 +175,6 @@ body{
 /* section-2 */
 .section-2{
     position: relative;
-    padding-top: 150px;
-    padding-bottom: 80px;
 }
 .section-2::before {
     position: absolute;
@@ -185,10 +183,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    top: 70px;
+    top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 150px;
+    bottom: 0px;
 }
 .section-2 h2{
     position: relative;
@@ -199,41 +197,23 @@ body{
     line-height: 117%;
     text-align: center;
     color: #FFFFFF;
-    padding: 70px 0px;
 }
 .sec2-con{
     position: relative;
 }
 .span-line{
     position: relative;
+    text-align: center;
+    padding: 100px 0px;
 }
 .dot-linetob{
-    position: absolute;
+    position:absolute;
     width: 7px;
     height: 7px;
-    left: 700px;
-    top: -80px;
+    top: 70px;
     background: #D9D9D9;
 }
 .dot-linetob::before {
-    position: absolute;
-    content: " ";
-    width: 75px;
-    height: 0px;
-    left: -34px;
-    top: 43px;
-    border: 1px solid #D9D9D9;
-    transform: rotate(90deg);
-}
-.dot-linebot {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    left: 700px;
-    bottom: 0px;
-    background: #D9D9D9;
-}
-.dot-linebot::before {
     position: absolute;
     content: " ";
     width: 75px;
@@ -247,10 +227,13 @@ body{
 /* Bx-finance section */
 .bx-finance-section{
     position: relative;
-    padding-top: 136px;
+    /* padding-top: 136px; */
 }
 .bx-content{
     position: relative;
+}
+.heading-row{
+    padding-top: 100px;
 }
 .bx-content h2{
     position: relative;
@@ -291,6 +274,9 @@ body{
     padding-bottom: 25px;
     margin-bottom: 0px;
 }
+.heading-star{
+    padding-right: 12px;
+}
  p{   
     font-family: 'Epilogue';
     font-style: normal;
@@ -316,7 +302,6 @@ body{
 /* section4 */
 .section4{
     position: relative;
-    padding-top: 150px;
 }
 .sec4-content{
     position: relative;
@@ -368,24 +353,6 @@ body{
 .crypto-con {
     position: relative;
 }
-.dot-linetob2 {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    left: 550px;
-    top: -80px;
-    background: #D9D9D9;
-}
-.dot-linetob2::before {
-    position: absolute;
-    content: " ";
-    width: 75px;
-    height: 0px;
-    left: -34px;
-    top: 43px;
-    border: 1px solid #D9D9D9;
-    transform: rotate(90deg);
-}
 .crypto-dot1 {
     position: absolute;
     width: 12px;
@@ -416,7 +383,6 @@ body{
 /* section-5 */
 .section-5{
     position: relative;
-    padding-top: 200px;
 }
 .section-5 h2{
     font-family: 'Michroma';
@@ -444,7 +410,7 @@ body{
 }
 .com-heading{
     position: relative;
-    padding-top: 90px;
+    padding-top: 50px;
 }
 .sec5-heading{
     position: relative;
@@ -479,6 +445,10 @@ body{
 }
 .sec5-card:hover{
     box-shadow: 0px 24px 32px rgba(78, 31, 163, 0.06), 0px 16px 24px rgba(78, 31, 163, 0.06), 0px 4px 8px rgba(78, 31, 163, 0.06), 0px 0px 1px rgba(78, 31, 163, 0.06);
+}
+.card-imgdiv{
+    display: flex;
+    justify-content: space-between;
 }
 .sec5-card h6{
     font-family: 'Michroma';
@@ -576,7 +546,6 @@ border-radius: 8px 8px 0px 0px;
 /* section-7 */
 .section-7 {
     position: relative;
-    padding-top: 150px;
     padding-bottom: 80px;
 }
 .sec7-heading h2{
@@ -589,7 +558,7 @@ border-radius: 8px 8px 0px 0px;
     background: linear-gradient(89.98deg, #F5D255 -3.37%, #36E7C4 99.98%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 60px;
 }
 .sec7-heading{
@@ -608,7 +577,7 @@ border-radius: 8px 8px 0px 0px;
 .head-gradient2{
     position: absolute;
     left: 180px;
-    top: 10px;
+    top: 0px;
     font-family: 'Michroma';
     font-style: normal;
     font-weight: 400;
@@ -630,16 +599,232 @@ border-radius: 8px 8px 0px 0px;
     padding-top: 80px;
 }
 .section-7 p{
-        font-family: 'Epilogue';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 156%;
-        text-align: justify;
-        padding-top: 50px;
-        color: #D9D9D9;
-        padding-bottom: 25px;
-        margin-bottom: 0px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: justify;
+    padding-top: 50px;
+    color: #D9D9D9;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+/* section-8 */
+ h2{
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 117%;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.home-link{
+    padding-top: 10px;
+}
+.sec8-card{
+    padding-top: 80px;
+}
+.card-body{
+    padding: 25px 45px;
+    border-left: 1px solid rgba(217, 217, 217, 0.1);
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+
+/* section-9 */
+.section-9{
+    padding-bottom: 20px;
+}
+.sec9-headig{
+    padding-top: 10px;
+}
+.sec9-card .row{
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 12px;
+}
+.card-body1{
+    background: rgba(48, 48, 48, 0.1);
+    border: 1px solid #191A1E;
+    border-radius: 8px;
+    padding: 22px;
+}
+.card-body1 p {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 156%;
+    text-align: justify;
+    color: #D9D9D9;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.card-body2 h6{
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    background: linear-gradient(89.98deg, #F5D255 -3.37%, #36E7C4 99.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.card-body2 {
+    background: rgba(48, 48, 48, 0.1);
+    border: 1px solid #191A1E;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+/* section-11 */
+.sec11-heading{
+    position: relative;
+}
+.sec11-heading h2 {
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    line-height: 117%;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+.product-con{
+    padding-top: 60px;
+}
+.product-card{
+    position: relative;
+}
+.product-dot1 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 10px;
+    top: 17px;
+    border: 2px solid #B1B5C4;
+    border-radius: 50%;
+}
+.product-dot1::before{
+    position: absolute;
+    content: " ";
+    height:0px;
+    width: 82px;
+    right: 11px;
+    top: 3px;
+    border: 1px dashed #d2d6e4;
+}
+.product-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 130px;
+    top: 17px;
+    border: 2px solid #B1B5C4;
+    border-radius: 50%;
+}
+.product-dot::after{
+    position: absolute;
+    content: " ";
+    height:0px;
+    width: 82px;
+    left: 11px;
+    top: 3px;
+    border: 1px dashed #d2d6e4;
+}
+.number-gradi{
+    position: absolute;
+    left: 30px;
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 80%;
+    letter-spacing: -0.005em;
+    background: linear-gradient( 200.16deg, #ffffff -29.31%, rgba(255, 255, 255, 0) 82.32% );
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+}
+    .pro-list{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 156%;
+    color: #D9D9D9;
+}
+/* section-12 */
+.head-gradient3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120%;
+    letter-spacing: -0.005em;
+    background: linear-gradient( 200.16deg, #ffffff -29.31%, rgba(255, 255, 255, 0) 82.32% );
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    z-index: -1;
+}
+.sec12-star1 {
+    position: absolute;
+    top: -100px;
+    left: 160px;
+}
+.sec12-con{
+    padding-top: 100px;
+}
+.meet-com1{
+    padding-top: 120px;
+}
+.meet-com3{
+    padding-top: 80px;
+}
+.imghover{
+    position: relative;
+}
+ .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: black;
+  cursor: pointer;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.hover-main{
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.hover-icon i{
+    color: #fff;
+}
+.hover-main:hover .overlay{
+  opacity: 0.8;
 }
 /* banner-section-Media Screen */
 /* media screen-1600px */
