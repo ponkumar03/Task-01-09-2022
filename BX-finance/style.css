@@ -49,6 +49,9 @@ body{
     border: 1px solid #4E1FA3;
     border-radius: 8px;
 }
+.nav-contact:hover{
+    background: rgb(25 195 168);
+}
 .home-content{
     position: relative;
 }
@@ -249,7 +252,7 @@ body{
 .text-grdi{
     position: absolute;
     left: -55px;
-    top: -90px;
+    bottom: 20px;
     font-family: 'Michroma';
     font-style: normal;
     font-weight: 400;
@@ -397,7 +400,7 @@ body{
 .text-grdi1{
     position: absolute;
     left: -50px;
-    top: -60px;
+    bottom: -20px;
     font-family: 'Michroma';
     font-style: normal;
     font-weight: 400;
@@ -586,8 +589,9 @@ border-radius: 8px 8px 0px 0px;
 }
 .head-gradient2{
     position: absolute;
-    left: 180px;
-    top: 0px;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Michroma';
     font-style: normal;
     font-weight: 400;
@@ -648,7 +652,7 @@ border-radius: 8px 8px 0px 0px;
     padding-bottom: 20px;
 }
 .sec9-headig{
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .sec9-card .row{
     --bs-gutter-x: 12px;
@@ -664,7 +668,7 @@ border-radius: 8px 8px 0px 0px;
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 156%;
     text-align: justify;
     color: #D9D9D9;
@@ -676,7 +680,7 @@ border-radius: 8px 8px 0px 0px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 135%;
+    line-height: 150%;
     letter-spacing: 0.01em;
     background: linear-gradient(89.98deg, #F5D255 -3.37%, #36E7C4 99.98%);
     -webkit-background-clip: text;
@@ -716,7 +720,7 @@ border-radius: 8px 8px 0px 0px;
     position: absolute;
     width: 12px;
     height: 12px;
-    right: 10px;
+    left: 70px;
     top: 17px;
     border: 2px solid #B1B5C4;
     border-radius: 50%;
@@ -725,7 +729,7 @@ border-radius: 8px 8px 0px 0px;
     position: absolute;
     content: " ";
     height:0px;
-    width: 82px;
+    width: 113px;
     right: 11px;
     top: 3px;
     border: 1px dashed #d2d6e4;
@@ -743,7 +747,7 @@ border-radius: 8px 8px 0px 0px;
     position: absolute;
     content: " ";
     height:0px;
-    width: 82px;
+    width: 113px;
     left: 11px;
     top: 3px;
     border: 1px dashed #d2d6e4;
@@ -758,7 +762,7 @@ border-radius: 8px 8px 0px 0px;
     font-style: normal;
     font-weight: 400;
     font-size: 120px;
-    line-height: 200%;
+    line-height: 170%;
     letter-spacing: -0.005em;
     background: linear-gradient( 200.16deg, #ffffff -29.31%, rgba(255, 255, 255, 0) 82.32% );
     -webkit-background-clip: text;
@@ -771,6 +775,14 @@ border-radius: 8px 8px 0px 0px;
     font-size: 16px;
     line-height: 156%;
     color: #D9D9D9;
+}
+.pro-list ul li{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 156%;
+    color: #D9D9D9; 
 }
 /* section-12 */
 .head-gradient3 {
@@ -807,10 +819,11 @@ border-radius: 8px 8px 0px 0px;
     text-align: justify;
     color: #D9D9D9;
     padding-right: 60px;
+    padding-bottom: 60px;
     margin-bottom: 0px;
 }
 .sec12-con{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .meet-com1{
     padding-top: 100px;
@@ -820,7 +833,7 @@ border-radius: 8px 8px 0px 0px;
 }
 .imghover{
     position: relative;
-    margin-top: 27px;
+    margin-top: 12px;
 }
  .overlay{
   position: absolute;
@@ -869,6 +882,10 @@ border-radius: 8px 8px 0px 0px;
 .hover-main:hover .overlay{
   opacity: 0.8;
 }
+.members .row {
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 12px;
+}
 /* section-13 */
 .blog-carousel{
     padding-top: 40px;
@@ -899,27 +916,16 @@ top: 0px;
 right: -120px;
 position: absolute;
 }
+.owl-carousel .owl-item .blog-image{
+    display: inline-flex;
+    width: 100%;
+}
 .owl-carousel .owl-item img {
     display: inline-flex;
     width: auto;
 }
 
 /* section-14 */
-.head-gradient4{
-    position: absolute;
-    right: 330px;
-    top: 0px;
-    font-family: 'Michroma';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 120px;
-    line-height: 120%;
-    letter-spacing: -0.005em;
-    background: linear-gradient( 200.16deg, #ffffff -29.31%, rgba(255, 255, 255, 0) 82.32% );
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 3px transparent;
-    z-index: -1;
-}
 .sec14-star1{
     position: absolute;
     top: 80px;
@@ -964,6 +970,11 @@ position: absolute;
     border: none;
     border-radius: 0px;
     border-bottom: 1px solid #D9D9D9;;
+}
+.form-control:focus{
+    color: #D9D9D9;
+    background-color: transparent;
+    box-shadow: none;
 }
 .form-control::placeholder{
     font-family: 'Exo 2';
@@ -1067,6 +1078,7 @@ position: absolute;
     font-size: 16px;
     line-height: 160%;
     color: #D9D9D9;
+    padding-top: 10px;
 }
 .backto-top a{
     text-decoration: none;
@@ -1081,11 +1093,20 @@ position: absolute;
     padding-left: 20px;
     padding-bottom: 10px;
 }
+.hover-main img{
+   width: 100%;
+}
 /* banner-section-Media Screen */
 /* media screen-1600px */
 @media screen and (max-width:1600px) {
     .star-1{
         left: -50px;
+    }
+    .home-section::before{
+        height: 350px;
+    }
+    .card-body2 h6{
+       font-size: 17px;
     }
 }
 
@@ -1100,7 +1121,7 @@ position: absolute;
 }
 
 /* media screen-1340px */
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1340px) {
     .nav-link{
         margin-left: 40px;
     }
@@ -1118,6 +1139,40 @@ position: absolute;
     }
     .home-section{
         padding-bottom: 250px;
+    }
+    /* section-2 */
+    .section-2 h2{
+        font-size: 30px;
+    }
+    /* section-3 */
+    .text-grdi{
+        font-size: 110px;
+    }
+    /* section-4 */
+    .section4 h2{
+        padding: 70px 0px;
+    }
+    .text-grdi1{
+        font-size: 110px;
+    }
+    .head-gradient2{
+        font-size: 110px;
+    }
+    .bx-logo2{
+        padding-top: 50px;
+    }
+    .section-7 p{
+        padding-top: 30px;
+    }
+    .head-gradient3{
+        font-size: 110px ;
+        top: 10px;
+    }
+    .form h3{
+        font-size: 40px;
+    }
+    .form-control::placeholder{
+        font-size: 24px;
     }
 }
 
@@ -1153,6 +1208,125 @@ position: absolute;
         top: 160px;
         left: 100px;
     }
+    /* section-2 */
+    .section-2 h2 {
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .text-grdi {
+        font-size: 100px;
+        left: -44px;
+    }
+    .bx-star1{
+        right: -25px;
+    }
+    /* section-4 */
+    .section4 h2{
+        font-size: 32px;
+    }
+    .span-line{
+        padding: 90px 0px;
+    }
+    .text-grdi1 {
+        font-size: 98px;
+        left: -30px;
+    }
+    /* section-5 */
+    .sec5-card h6{
+        font-size: 16px;
+    }
+    .sec7-star1 {
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+    .accordion-button{
+        font-size: 16px;
+        padding: 14px 18px;
+    }
+    .accordion-body {
+        padding: 14px 18px;
+    }
+    .sec7-star2 {
+        position: absolute;
+        bottom: 20px;
+        left: 70px;
+    }
+    .section-7 p {
+        padding-top: 20px;
+    }
+    .sec7-heading h2{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h6{
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .bx-logo1 {
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .bx-logo2{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card-body {
+        padding: 18px 40px;
+    }
+    .card-body2 h6 {
+        font-size: 15px;
+    }
+    .sec8-card {
+        padding-top: 60px;
+    }
+    .head-gradient{
+        font-size: 50px;
+    }
+    .sec5-heading {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .sec11-heading h2{
+        font-size: 32px;
+    }
+    .head-gradient2 {
+        font-size: 100px;
+    }
+    .number-gradi{
+        font-size: 90px;
+    }
+    .pro-list ul li{
+        font-size: 13px;
+    }
+    .head-gradient3 {
+        font-size: 100px;
+    }
+    .sec12-con p{
+        font-size: 15px;
+        padding-right: 40px;
+    }
+    .blog-body h5{
+        font-size: 20px;
+    }
+    .media3 {
+        padding-top: 20px;
+    }
+    .media2 {
+        padding: 80px 15px 0px 15px;
+    }
+    .footer-social ul li i{
+        padding-right: 40px;
+    }
+    .footer-link a{
+        font-size: 15px;
+    }
+
 }
 
 /* media screen-1024px */
@@ -1205,6 +1379,101 @@ position: absolute;
     }
     .home-section::before {
         height: 180px;
+    }
+    .section-2 h2 {
+        font-size: 22px;
+    }
+    .heading-row {
+        padding-top: 60px;
+    }
+    .heading-row {
+    padding-top: 60px;
+    }
+    .bx-content h2{
+        font-size: 30px;
+    }
+    .text-grdi {
+        font-size: 90px;
+        left: -37px;
+        bottom: 24px;
+    }
+    .home-link a{
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    .home-link a::after{
+        width: 145px;
+    }
+    .section4 h2 {
+        font-size: 28px;
+    }
+    .sec4-star2 {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+    .sec4-star1 {
+        position: absolute;
+        bottom: 15px;
+        left: 30px;
+    }
+    .crypto-dot{
+        right: 40px;
+    }
+    .crypto-dot1{
+        left: 40px;
+    }
+    .dot-line{
+        width: 100px;
+        right: -62px;
+    }
+    .crypto-con h4{
+        font-size: 14px;
+        padding-top: 18px;
+        padding-bottom: 10px;
+    }
+    .crypto-con p{
+        font-size: 12px;
+    }
+    .com-heading p{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .sec5-heading {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .span-line {
+        padding: 70px 0px;
+    }
+    .dot-linetob{
+        top: 48px;
+    }
+    .sec7-heading h2 {
+        font-size: 25px;
+    }
+    .head-gradient2 {
+        font-size: 85px;
+        top: 44%;
+    }
+    .sec7-star1 {
+        top: 20px;
+        right: 20px;
+    }
+    .sec7-star2 {
+        bottom: 10px;
+        left: 20px;
+    }
+    .sec7-images{
+        text-align: center;
+    }
+    .bx-logo1{
+        padding-top: 0px;
+    }
+    .bx-logo2{
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
