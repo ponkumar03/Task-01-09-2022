@@ -18,8 +18,8 @@
   <div class="box">
     <div id="cursor" class="circle">
       <div class="inner-circle spins"></div>
-    </civ>
-  </div>
+    </div>
+</div>
     <section class="home-section">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -1197,6 +1197,10 @@
         </div>
       </div>
     </section>
+    <!-- custom-cursor -->
+    <div class="cursor"></div>
+
+
      <!-- owl-jquery.min.css -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <!-- OwlCarouse min.js -->
@@ -1375,12 +1379,16 @@ $('#customers-testimonials4').owlCarousel( {
   });
 });
 </script>
-// carsour.js
-<script>
-  window.addEventListener('mousemove', (event) => {
+<!-- cursor.js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>   
+  $(document).ready(function($) {
+     window.addEventListener('mousemove', (event) => {
         document.getElementById('cursor').style.transform = "translate3d("+(event.clientX - 30)+"px,"+(event.clientY - 30)+"px,0px)"
         document.getElementById('cursor').style.opacity = '1'
     })
+  });
 </script>
 </body>
 </html>
