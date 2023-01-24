@@ -23,8 +23,8 @@ body{
     z-index: 2;
   }
   .circle{
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     position: absolute; 
     transform: translate3d(-50%,-50%,0);
@@ -34,7 +34,7 @@ body{
   .inner-circle {
     height: 100%;
     width: 100%;
-    border: 2px solid #FFF;
+    border: 1px solid rgba(217, 217, 217, 0.5);
     border-radius: 50%;
   }
   /* navbar */
@@ -672,15 +672,15 @@ border-radius: 8px 8px 0px 0px;
 .sec7-heading{
     position: relative;
 }
-.sec7-star1{
+.sec7-star1 {
     position: absolute;
-    top: 40px;
-    right: 80px;
+    top: 0px;
+    right: 40px;
 }
 .sec7-star2{
     position: absolute;
     bottom: 20px;
-    left: 100px;
+    left: 0px;
 }
 .head-gradient2{
     position: absolute;
@@ -735,14 +735,18 @@ border-radius: 8px 8px 0px 0px;
     padding-left: 110px;
 }
 .card-body{
-    padding: 25px 45px;
-    border-left: 1px solid rgba(217, 217, 217, 0.1);
+    padding: 0px;
 }
 .owl-carousel .owl-item img {
     display: block;
     width: auto;
 }
-
+#customers-testimonials .owl-item {
+    margin-right: 30px !important;
+    padding-left: 55px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(217, 217, 217, 0.1);
+}
 /* section-9 */
 .section-9{
     padding-bottom: 20px;
@@ -830,7 +834,7 @@ border-radius: 8px 8px 0px 0px;
     font-family: "Epilogue";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 156%;
     color: #d9d9d9;
   }
@@ -1059,6 +1063,9 @@ position: absolute;
     color: #D9D9D9;
     padding-bottom: 16px;
 }
+.home-link2 a:hover{
+    color: #F5D255;
+}
 .home-link2 a::after {
     position: absolute;
     content: " ";
@@ -1068,7 +1075,9 @@ position: absolute;
     bottom: 0px;
     border-bottom: 1px solid #D9D9D9;
 }
-
+.home-link2 a:hover::after {
+    border-bottom: 1px solid #F5D255;
+}
 /* section-14 */
 .sec14-star1{
     position: absolute;
@@ -1489,7 +1498,7 @@ position: absolute;
         padding-right: 0px;
     }
     .card-body {
-        padding: 18px 40px;
+        padding: 0px;
     }
     .card-body2 h6 {
         font-size: 15px;
@@ -2448,6 +2457,9 @@ position: absolute;
         width: 100px;
         padding: 26px 5px 0px;
     }
+    #customers-testimonials .owl-item{
+        padding-left: 30px;
+    }
 }
  
 /* media screen-375px */
@@ -2730,8 +2742,7 @@ position: absolute;
     .section-16 {
         padding-bottom: 10px;
     }
+    #customers-testimonials .owl-item {
+        padding-left: 20px;
+    }
 }
-
-/* * {
-    border:1px solid red;
-} */
