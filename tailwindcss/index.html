@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Tailwind css</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="bg-purple-100 rounded-2xl p-5">
+        <div class="container mx-auto">
+            <div class="flex items-center">
+                <a class="text-3xl font-bold pr-5 border-r border-purple-300 mr-5" href="#">Agency</a>
+                <div>
+                    <button class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                        </svg>
+                    </button>
+                    <ul class="hidden md:flex font-bold text-gray-600">
+                       <li class="pr-5 hover:text-red-500"><a class="px-3 py-2" href="#"></a>Home</li> 
+                       <li class="pr-5 hover:text-red-500"><a class="px-3 py-2" href="#"></a>About</li> 
+                       <li class="pr-5 hover:text-red-500"><a class="px-3 py-2" href="#"></a>Services</li> 
+                       <li class="pr-5 hover:text-red-500"><a class="px-3 py-2" href="#"></a>Portfolio</li> 
+                       <li class="pr-5 hover:text-red-500"><a class="px-3 py-2" href="#"></a>Contact</li> 
+                    </ul>
+                </div>
+                <a class="flex ml-auto text-medium bg-red-500 text-white px-3 py-2 rounded" href="#">
+                    <span class="pr-1 hidden lg:block">Get Quote</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="block md:flex py-36">
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-5xl font-bold">
+                        World Class Gesign For Your Products.
+                    </h1>
+                    <p class="mt-8 text-2xl text-gray-600">
+                        Lets bring life to your brand.
+                    </p>
+                    <div class="flex mt-12">
+                        <a class="mr-5 text-large bg-purple-600 text-white px-3 py-2 rounded" href="">Services</a>
+                        <a class="mr-5 text-large bg-red-600 text-white px-3 py-2 rounded" href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img class="rounded" src="images/img3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
