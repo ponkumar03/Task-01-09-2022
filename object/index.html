@@ -1,149 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object Method</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>JavaScript Object Properties</h2>
-<p>Access a property with ["property"]:</p>
+    <p>Access a property with ["property"]:</p>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<p>Looping object property values:</p>
-<p id="demo1"></p>
+    <p>Looping object property values:</p>
+    <p id="demo1"></p>
 
-<h2>Nested JavaScript Objects and Arrays.</h2>
-<p id="demo2"></p>
+    <h2>Nested JavaScript Objects and Arrays.</h2>
+    <p id="demo2"></p>
 
-<h2>Display properties in JSON format</h2>
-<p id="demo3"></p>
+    <h2>Display properties in JSON format</h2>
+    <p id="demo3"></p>
 
-<h2>JavaScript Getters and Setters</h2>
-<p id="demo4"></p>
-<p id="demo5"></p>
+    <h2>JavaScript Getters and Setters</h2>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
 
-<h2>JavaScript Object Constructors</h2>
-<p id="demo6"></p>
+    <h2>JavaScript Object Constructors</h2>
+    <p id="demo6"></p>
 
-<h2>JavaScript Iterables</h2>
-<p>Iterate over a Set:</p>
+    <h2>JavaScript Iterables</h2>
+    <p>Iterate over a Set:</p>
 
-<p id="demo7"></p>
-<script>
-const person = {
-  firstname: "John",
-  lastname: "Doe",
-  age: 50,
-  eyecolor: "blue"
-};
+    <p id="demo7"></p>
+    <script>
+      const person = {
+        firstname: "John",
+        lastname: "Doe",
+        age: 50,
+        eyecolor: "blue",
+      };
 
-document.getElementById("demo").innerHTML = person["firstname"] + " is " + person["age"] + " years old.";
-</script>
+      document.getElementById("demo").innerHTML = person["firstname"] + " is " + person["age"] + " years old.";
+    </script>
 
-<!-- Looping object property values -->
-<script>
-  const persons ={
-    firstname :'Jone',
-    lastname : 'Doe',
-    age : 25
-  };
-  let txt =""
-  for(let x in persons){
-    txt += persons[x] + "";
-  }
-  document.getElementById("demo1").innerHTML= txt;
-</script>
-<!-- Nested JavaScript Objects and Arrays -->
-<script>
-  const myObj = {
-  name: "John",
-  age: 30,
-  cars: [
-    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-    {name:"BMW", models:["320", "X3", "X5"]},
-    {name:"Fiat", models:["500", "Panda"]}
-  ]
-} 
-let x = ""
-for(let i in myObj.cars){
-  x += "<h2>" + myObj.cars[i].name +"</h2>";
-  for(let j in myObj.cars[i].models){
-    x += myObj.cars[i].models[j] +"<br>";
-  }
-}
-document.getElementById("demo2").innerHTML=x;
-</script>
-<!-- Display properties in JSON format -->
-<script>
-  const person2 = {
-    name: "John",
-    age: 30,
-    city: "New York"
-  };
-  
-  document.getElementById("demo3").innerHTML = JSON.stringify(person2);
-  </script>
+    <!-- Looping object property values -->
+    <script>
+      const persons = {
+        firstname: "Jone",
+        lastname: "Doe",
+        age: 25,
+      };
+      let txt = "";
+      for (let x in persons) {
+        txt += persons[x] + "";
+      }
+      document.getElementById("demo1").innerHTML = txt;
+    </script>
+    <!-- Nested JavaScript Objects and Arrays -->
+    <script>
+      const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+          { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+          { name: "BMW", models: ["320", "X3", "X5"] },
+          { name: "Fiat", models: ["500", "Panda"] },
+        ],
+      };
+      let x = "";
+      for (let i in myObj.cars) {
+        x += "<h2>" + myObj.cars[i].name + "</h2>";
+        for (let j in myObj.cars[i].models) {
+          x += myObj.cars[i].models[j] + "<br>";
+        }
+      }
+      document.getElementById("demo2").innerHTML = x;
+    </script>
+    <!-- Display properties in JSON format -->
+    <script>
+      const person2 = {
+        name: "John",
+        age: 30,
+        city: "New York",
+      };
 
-  <!-- object get Method -->
-  <script>
-   const person3 = {
-  firstName: "John",
-  lastName: "Doe",
-  language: "en",
-  get lang() {
-    return this.language;
-  }
-};
-document.getElementById("demo4").innerHTML = person3.lang;
-  </script>
+      document.getElementById("demo3").innerHTML = JSON.stringify(person2);
+    </script>
 
-<script>
-  // Create an object:
-  const person4 = {
-    firstName: "John",
-    lastName: "Doe",
-    language: "",
-    set lang(lang) {
-      this.language = lang.toUpperCase();
-    }
-  };
-  
-  // Set a property using set:
-  person4.lang = "en";
-  
-  // Display data from the object:
-  document.getElementById("demo5").innerHTML = person4.language;
-  </script>
+    <!-- object get Method -->
+    <script>
+      const person3 = {
+        firstName: "John",
+        lastName: "Doe",
+        language: "en",
+        get lang() {
+          return this.language;
+        },
+      };
+      document.getElementById("demo4").innerHTML = person3.lang;
+    </script>
 
-<!-- JavaScript Object Constructors -->
-  <script>
-    function person5(first,last,age,eye){
-      this.firstname = first;
-      this.lastname = last;
-      this.age = age;
-      this.eyecolor = eye;
-    }
-    // Create two Person objects
-    const myFather = new person5("Jone","Doe",50,"blue");
-    const myMother = new person5("Sally", "Rally", 48, "green");
+    <script>
+      // Create an object:
+      const person4 = {
+        firstName: "John",
+        lastName: "Doe",
+        language: "",
+        set lang(lang) {
+          this.language = lang.toUpperCase();
+        },
+      };
 
-    document.getElementById("demo6").innerHTML="My father is"+ myFather.age +".<br/>"+"My mother is"+myMother.age+".";
-  </script>
-  <!-- JavaScript Iterables -->
-  <script>
-    // Create a Set
-const letters = new Set(["a","b","c"]);
+      // Set a property using set:
+      person4.lang = "en";
 
-// List all Elements
-let text = "";
-for (const x of letters) {
-  text += x + "<br>";
-}
+      // Display data from the object:
+      document.getElementById("demo5").innerHTML = person4.language;
+    </script>
 
-document.getElementById("demo7").innerHTML = text;
-  </script>
-</body>
+    <!-- JavaScript Object Constructors -->
+    <script>
+      function person5(first, last, age, eye) {
+        this.firstname = first;
+        this.lastname = last;
+        this.age = age;
+        this.eyecolor = eye;
+      }
+      // Create two Person objects
+      const myFather = new person5("Jone", "Doe", 50, "blue");
+      const myMother = new person5("Sally", "Rally", 48, "green");
+
+      document.getElementById("demo6").innerHTML = "My father is" + myFather.age + ".<br/>" + "My mother is" + myMother.age + ".";
+    </script>
+    <!-- JavaScript Iterables -->
+    <script>
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // List all Elements
+      let text = "";
+      for (const x of letters) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("demo7").innerHTML = text;
+    </script>
+
+    <!-- specific values in an array -->
+    <h3>Get only specific values in an array of objects in JavaScript?</h3>
+    <script>
+      var details = [
+        {
+          studentName: "John",
+          studentMarks: 92,
+        },
+        {
+          studentName: "David",
+          studentMarks: 89,
+        },
+        {
+          studentName: "Mike",
+          studentMarks: 98,
+        },
+      ];
+      var specificValuesFromArray = details.filter((obj) => obj.studentMarks === 92 || obj.studentMarks === 98);
+      console.log(specificValuesFromArray);
+    </script>
+
+    <!-- Fetch alternative even values from a JavaScript array -->
+    <h3>How to Fetch alternative even values from a JavaScript array?</h3>
+    <script>
+      var subjectsName = ["MySQL", "JavaScript", "MongoDB", "C", "C++", "Java"];
+      for (let index = 0; index < subjectsName.length; index++) {
+        if (index % 2 == 0) console.log("Subject name at even position=" + subjectsName[index]);
+      }
+    </script>
+  </body>
 </html>
