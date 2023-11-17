@@ -167,6 +167,25 @@
       console.log(specificValuesFromArray);
     </script>
 
+    <!-- How to Filter an Array with a for loop -->
+    <script>
+      let users = [
+        { name: "John", age: 25, occupation: "gardener" },
+        { name: "Lenny", age: 51, occupation: "programmer" },
+        { name: "Andrew", age: 43, occupation: "teacher" },
+        { name: "Peter", age: 81, occupation: "teacher" },
+        { name: "Anna", age: 47, occupation: "programmer" },
+        { name: "Albert", age: 76, occupation: "programmer" },
+      ];
+      let filteredUsers = [];
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].age > 40 && users[i].occupation === "programmer") {
+          filteredUsers = [...filteredUsers, users[i]];
+        }
+      }
+      console.log(filteredUsers);
+    </script>
+
     <!-- Fetch alternative even values from a JavaScript array -->
     <h3>How to Fetch alternative even values from a JavaScript array?</h3>
     <script>
@@ -174,6 +193,36 @@
       for (let index = 0; index < subjectsName.length; index++) {
         if (index % 2 == 0) console.log("Subject name at even position=" + subjectsName[index]);
       }
+    </script>
+
+    <!-- Array.prototype.includes() -->
+    <script>
+      const arraye = [1, 2, 3];
+
+      console.log(arraye.includes(2));
+      // Expected output: true
+
+      const pets = ["cat", "dog", "bat"];
+
+      console.log(pets.includes("cat"));
+      // Expected output: true
+
+      console.log(pets.includes("at"));
+      // Expected output: false
+    </script>
+
+    <!-- The concat() method merges (concatenates) arrays -->
+
+    <p id="demo"></p>
+
+    <script>
+      const array1 = ["Cecilie", "Lone"];
+      const array2 = ["Emil", "Tobias", "Linus"];
+      const array3 = ["Robin", "Morgan"];
+
+      const myChildren = array1.concat(array2, array3);
+
+      document.getElementById("demo").innerHTML = myChildren;
     </script>
   </body>
 </html>
