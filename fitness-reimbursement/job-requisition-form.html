@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Fitness Reimbursement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-form-section py-5">
+      <div class="container">
+        <div class="content-main">
+          <h1>Job Requisition Form</h1>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputtext" class="col-form-label">Today's Date : </label>
+            </div>
+            <div class="col-auto">
+              <input type="password" id="inputtext" class="form-control form-control-input" />
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputtext" class="col-form-label">Position Title: </label>
+            </div>
+            <div class="col">
+              <input type="text" id="inputtext" class="form-control form-control-input" />
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputtext" class="col-form-label">Department: </label>
+            </div>
+            <div class="col">
+              <input type="text" id="inputtext" class="form-control form-control-input" />
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputtext" class="col-form-label">Which Division of Department (if applicable - e.g. DPW) </label>
+            </div>
+            <div class="col">
+              <input type="text" id="inputtext" class="form-control form-control-input" />
+            </div>
+          </div>
+          <h5 class="pb-2 mt-4">Is this a Union position? If so, which Union?:</h5>
+          <div class="row g-3 align-items-center">
+            <div class="col-md-6">
+              <label for="muhRadio1"> BCHASA (Admin. Assts.) <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-md-6">
+              <label for="muhRadio1">BCEU (City Employees' Union) <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> Department Head Union <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> Library Union <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> BAETI (Engs., Techs, Insp.) <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> Water and Sewer <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> Buildings and Trades <input type="radio" name="claim" value="" /></label>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <label for="muhRadio1"> Laborers' <input type="radio" name="claim" value="" /></label>
+            </div>
+          </div>
+
+          <h4 class="text-center pb-4 mt-5">Reason for Filling Position</h4>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <label for="position"><input type="radio" name="position" value="" /> Backfilling Position (i.e., replacing a person who is leaving / vacant position) </label>
+              <div class="row g-3 align-items-center">
+                <div class="col-auto mt-2">
+                  <label for="inputtext" class="col-form-label">Name of person leaving:</label>
+                </div>
+                <div class="col mt-2">
+                  <input type="text" id="inputtext" class="form-control form-control-input" />
+                </div>
+                <p class="py-2 mb-3">Date that the position became / will be vacant:</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <label for="position"><input type="radio" name="position" value="" /> Budgeted New Position (Job Description Attached) *Mayor's approval needed </label>
+              <div class="row g-3 align-items-center">
+                <div class="col-auto mt-2">
+                  <label for="inputtext" class="col-form-label">Budgeted Pay Grade / Range:</label>
+                </div>
+                <div class="col mt-2">
+                  <input type="text" id="inputtext" class="form-control form-control-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-10 mx-auto">
+              <label for="inputtext" class="col-form-label">If this is a non-budgeted new position, provide the reason(s) for requesting below: </label>
+              <input type="text" id="inputtext" class="form-control form-control-input" />
+            </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-lg-6 mx-auto">
+              <ul class="add-text-btn Signature-field">
+                <li>
+                  <p class="p-0">Department Head Signature:</p>
+                  <span class="text-block"></span>
+                </li>
+                <li>
+                  <p class="p-0">CFO Signature:</p>
+                  <span class="text-block"></span>
+                </li>
+                <li>
+                  <p class="p-0">Mayor's Signature (if new position):</p>
+                  <span class="text-block"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul>
+                <li>
+                  <div class="Signature-field-date ms-auto">
+                    <label for="fname">Date:</label>
+                    <input type="text" id="fname" name="fname" class="date-filed" />
+                  </div>
+                </li>
+                <li>
+                  <div class="Signature-field-date ms-auto">
+                    <label for="fname">Date:</label>
+                    <input type="text" id="fname" name="fname" class="date-filed" />
+                  </div>
+                </li>
+                <li>
+                  <div class="Signature-field-date ms-auto">
+                    <label for="fname">Date:</label>
+                    <input type="text" id="fname" name="fname" class="date-filed" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <p>*Only needed for newly budgeted positions.</p>
+              <p>Please email form and attachments to hr@cobma.us (use subject line "Seymour")</p>
+              <p>when completely filled out and signed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

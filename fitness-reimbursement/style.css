@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin: unset;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px 0px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.main-header h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: normal;
+  color: #187de1;
+}
+.main-header h3 {
+  font-size: 22px;
+  color: #187de1;
+}
+p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.step-card {
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+  border: 2px solid #187de1;
+}
+.step-card::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  border-top: 50px solid #187de1;
+  border-right: 50px solid transparent;
+}
+.step-card span {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+.step-card h4 {
+  color: #187de1;
+}
+.steps-to-getting-reimbursed h3 {
+  color: #187de1;
+  padding: 20px 0px;
+}
+.steps-to-getting-reimbursed {
+  padding-bottom: 30px;
+}
+.discreption h4 {
+  color: #187de1;
+  padding-bottom: 10px;
+}
+.discreption-list {
+  padding-left: 20px;
+}
+.discreption-list li {
+  list-style: disc;
+  /* list-style-position: inside; */
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.discreption-list li::marker {
+  color: #187de1 !important;
+}
+.main-section hr {
+  border-top: 3px solid #187de1;
+  opacity: 1;
+  margin: 20px 0px;
+}
+.discreption-list1 {
+  padding-left: 40px;
+}
+.discreption-list1 li {
+  position: relative;
+}
+.discreption-list1 li::before {
+  position: absolute;
+  content: " ";
+  top: 12px;
+  left: -15px;
+  width: 10px;
+  height: 1px;
+  background: #000;
+}
+.copy-right {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+.main-section {
+  position: relative;
+}
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 100px solid #187de1;
+  border-right: 100px solid transparent;
+}
+.steps-to-getting-reimbursed .row {
+  row-gap: 30px;
+}
+table {
+  width: 100%;
+}
+.table {
+  border: 1px solid #187de1;
+}
+.table th {
+  background: #187de1;
+  color: #fff;
+  font-size: 20px;
+}
+.table th span {
+  font-size: 14px;
+}
+.form-control:focus,
+.form-control {
+  border: none !important;
+  box-shadow: none;
+  outline: none;
+}
+input[type="radio"] {
+  border: 1px solid #000;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:checked {
+  background: #187de1;
+  background-size: 9px 9px;
+}
+
+input[type="radio"]:focus {
+  outline-color: transparent;
+}
+.text-block1,
+.text-block {
+  display: block;
+  width: 200px;
+  border-bottom: 1px solid #000;
+}
+.text-block1 {
+  width: 100%;
+}
+
+.add-text,
+.add-text-btn li {
+  display: flex;
+}
+.relative-td {
+  position: relative;
+}
+.health-plan {
+  padding: 10px 0px 0px 5px;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  border: 1px solid #187de1;
+}
+ul li {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+label {
+  font-size: 18px;
+}
+.discreption h4 span {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+}
+.step-card.card-2 {
+  padding: 20px 30px;
+}
+.data-width {
+  width: 600px;
+}
+.text-block.w-full {
+  width: 500px;
+}
+
+/* Job Requisition Form styles */
+.content-main h1 {
+  text-align: center;
+}
+.form-control-input {
+  border-bottom: 1px solid #000 !important;
+  border-radius: 0px;
+}
+.form-control-input:focus {
+  border-bottom: 1px solid #000 !important;
+}
+.col-form-label {
+  padding-bottom: 0px !important;
+  font-size: 18px !important;
+}
+.date-filed {
+  border: 0px !important;
+  border-bottom: 1px solid #000 !important;
+}
+.date-filed:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 1199px) {
+  .data-width {
+    width: 500px;
+  }
+  .main-header h1 {
+    font-size: 38px;
+  }
+  .text-block.w-full {
+    width: 400px;
+  }
+  .text-block1,
+  .text-block {
+    width: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .data-width {
+    width: 400px;
+  }
+  .main-header h1 {
+    font-size: 36px;
+  }
+  .text-block.w-full {
+    width: 300px;
+  }
+  .text-block1,
+  .text-block {
+    width: 150px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .data-width {
+    width: auto;
+  }
+  .main-header h1 {
+    font-size: 32px;
+  }
+  .table th {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .text-block.w-full {
+    width: 200px;
+  }
+  label {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .main-header h1 {
+    font-size: 28px;
+  }
+  .table th {
+    font-size: 18px;
+  }
+  .steps-to-getting-reimbursed h3,
+  .main-header h3 {
+    font-size: 20px;
+  }
+  .discreption-list li {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .discreption.mb-4 {
+    margin-bottom: 10px !important;
+  }
+  .options-table {
+    width: 600px;
+  }
+  .col-form-label {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 425px) {
+  .main-header h1 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .table th {
+    font-size: 17px;
+  }
+  .main-header h3,
+  ul li,
+  p {
+    font-size: 16px;
+  }
+  .step-card.card-2 {
+    padding: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .main-header img {
+    width: 45px;
+    height: auto;
+  }
+  .discreption-list li {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .main-form.py-5 {
+    padding-bottom: 10px !important;
+  }
+  .col-form-label {
+    font-size: 14px !important;
+  }
+}
